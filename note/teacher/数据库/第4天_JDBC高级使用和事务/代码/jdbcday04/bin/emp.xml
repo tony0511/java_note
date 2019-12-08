@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Employee>
+  <id>100</id>
+  <first>张</first>
+  <last>三</last>
+  <Salary>10000</Salary>
+  <Dob>18-08-1978</Dob>
+</Employee>
