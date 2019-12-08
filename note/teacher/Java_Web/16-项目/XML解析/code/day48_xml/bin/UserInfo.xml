@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Users>
+	<user id="9527">  
+        <name>admin</name>  
+        <age>40</age>  
+        <hobby>manage someone!</hobby>  
+    </user>  
+    <user id="9632">  
+        <name>chenghui</name>  
+        <age>110</age>  
+        <hobby>code something!</hobby>  
+    </user>  
+</Users>  
