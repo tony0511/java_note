@@ -7,13 +7,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-<!-- 必须设置为 method="post" enctype="multipart/form-data" -->
-<form action="UploadServlet2" method="post" enctype="multipart/form-data">
-	
-	<input type="text" name="name"/><br />
-	<input type="file" name="file" /><br />
-	<input type="submit" value="upload" />
-</form>
-
+  <!-- 必须设置为 method="post" enctype="multipart/form-data" -->
+  <form action="UploadServlet2" method="post" enctype="multipart/form-data">
+  	<input type="text" name="name"/><br />
+  	<input type="file" name="file" /><br />
+  	<input type="submit" value="upload" />
+  </form>
 </body>
 </html>

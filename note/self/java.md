@@ -1,6 +1,6 @@
 [TOC]
 
-### Java开发入门
+### 1 Java开发入门
 
 - JDK（Java Development Kit）Java开发工具包，包含了JRE（因为开发后要运行程序）
 
@@ -56,9 +56,9 @@
 
 - 编写代码时除了 lang 包下面的类不用引入，其他的包都需要引入才能使用。
 
-### Java基础
+### 2 Java基础
 
-#### 工作空间
+#### 2.1工作空间
 
 **切换工作空间时，一般需要修改一下一些基本配置**(eclipse)
 
@@ -70,9 +70,9 @@
    - .abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ(@,
 5. 搜索 Formatter，在右侧点击 New... 按钮来新建一个属性，随便写一个 Profile name，如 ldf，Initialize settings with the following profile 选择 Eclipse [built-in] 就好，然后点击OK；再点击“Edit…”按钮；在 Indentation 选项卡中的 General settings 中的 Tab policy 选择 Spaces only，ndentation size 的值输入 2；再点击 OK 即可。
 
-#### 变量与标识符
+#### 2.2 变量与标识符
 
-##### 变量分类
+##### 2.2.1 变量分类
 1. 按数据类型分：
   - 基本数据类型（8种）
   - 引用数据类型
@@ -80,7 +80,7 @@
   - 局部变量：方法或语句块内部定义的变量
   - 成员变量：方法外部、类的内部定义的变量 
 
-##### 标识符(变量)命名规则
+##### 2.2.2 标识符(变量)命名规则
 - 由字母、数字、下划线（_）和美元符号（$）组成。
 - 不能以数字开头。
 - 区分大小写。
@@ -88,7 +88,7 @@
 - 不能是Java中的关键字和保留关键字。 
 - 标识符命名习惯：驼峰命名法、见名知意。以单词或单词组合来命名
 
-#### 八种基本数据类型
+#### 2.3 八种基本数据类型
 **注：**  
 
 - 字节(Byte)是文件大小的基本单位，位(bit)二进制最小的基本单位
@@ -112,7 +112,7 @@
 单精度浮点型 | float | 4 | 1.4E-45~3.4028235E38 | 0.0F   
 双精度浮点型 | double | 8 | 4.9E-324~1.7976931348623157E308 | 0.0D
 
-##### 类型转换
+##### 2.3.1类型转换
 
 自动类型转换：
 
@@ -126,7 +126,7 @@
 - 有可能造成精度降低或数据溢出，使用时要小心。
 - boolean 类型不能转换成任何其它数据类型。
 
-#### 包装类
+#### 2.4 包装类
 
 **Number**：Integer、Short、Long、Double、Float、Byte 都是 Number 的子类，表示是一个数字。
 
@@ -143,7 +143,7 @@
 | short        | Short     |
 | long         | Long      |
 
-##### 装箱/拆箱操作
+##### 2.4.1 装箱/拆箱操作
 
 将一个基本数据类型转换为包装类的操作称为装箱操作。将一个包装类转换为一个基本数据类型的操作称为拆箱操作。
 
@@ -156,12 +156,12 @@
 | longValue()   | Long  —>   long     |
 | shortValue()  | Short  —>   short   |
 
-##### 转型操作
+##### 2.4.2 转型操作
 
 1. 将一个字符串变为指定的基本数据类型
 2. **转型操作时，字符串必须由数字组成，否则会出现错误**
 
-##### 享元模式（Flyweight Pattern）
+##### 2.4.3 享元模式（Flyweight Pattern）
 
 它使用共享对象，用来尽可能减少内存使用量以及分享资讯给尽可能多的相似对象；它适合用于当大量对象只是重复因而导致无法令人接受的使用大量内存。通常对象中的部分状态是可以分享。常见做法是把它们放在外部数据结构，当需要使用时再将它们传递给享元
 
@@ -205,21 +205,21 @@ public class Test16{
 }
 ```
 
-#### 数字处理类
+#### 2.5 数字处理类
 
-##### BigInteger类
+##### 2.5.1 BigInteger类
 
 可以让超过 Integer 范围内的数据进行运算
 
 **注：**除法运算时，返回 BigInteger 类型的整数，商的小数部分会舍弃
 
-##### BigDecimal类
+##### 2.5.2 BigDecimal类
 
 由于在运算的时候，float 类型和 double 很容易丢失精度，为了能精确的表示、计算浮点数，Java提供了 BigDecimal，不可变的、任意精度的有符号十进制数
 
 **注：**除法运算时，其值为`(this / divisor)` ，优先级为`(this.scale() - divisor.scale())` ; 如果不能表示确切的商（因为它具有非终止的十进制扩展，也就是说**除不尽**），则抛出一个`ArithmeticException` (算法异常)
 
-##### DecimalFormat类
+##### 2.5.3 DecimalFormat类
 
 可以用最快的速度将数字格式化为你需要的样子
 
@@ -283,24 +283,24 @@ public class Test {
 
 
 
-#### 转义字符
+#### 2.6 转义字符
 
 \n：换行，\r：回车，\t：tab制表符，\\\\：反斜杠，\"：双引号，\'：单引号
 
-#### 运算符
+#### 2.7 运算符
 
-##### 算数运算符
+##### 2.7.1 算数运算符
 -  从左往右运算   
 - +、-、×、/、%、++、--
 
-##### 赋值运算符
+##### 2.7.2 赋值运算符
 - 从右往左运算  
 - =、+=、-=、×=、/=、%=、&=、|=、^=、~=、<<=、>>=、>>>=
 
-##### 关系运算符
+##### 2.7.3 关系运算符
 - ==、!=、>、<、>=、<=
 
-##### 逻辑运算符
+##### 2.7.4 逻辑运算符
 
 运算符 | 描述 | 示例 | 结果  
 :-- | :-- | :-- | :--  
@@ -317,24 +317,24 @@ public class Test {
 - &&: 先计算左边的表达式，如果为false，则不会计算后面的表达式，直接返回false；如果左边表达式结果为true，则还要计算右边的表达式（短路与）。
 - |与||的区别和上面的类似。
 
-##### 位运算符
+##### 2.7.5 位运算符
 
 - ~：按位取反  
 - &：按位与
 - |：按位或
 - ^：按位异或 
 
-##### 位移运算符（运算速度最快）
+##### 2.7.6 位移运算符（运算速度最快）
 
 - 左移："a<<b; "将二进制形式的a逐位左移b位，最低位空出的b位补0
 - 带符号右移："a>>b; "将二进制形式的a逐位右移b位，最高位空出的b位补原来的符号位
 - 无符号右移："a>>>b;"将二进制形式的a逐位右移b位，最高位空出的b位补0
 
-##### 三目运算符
+##### 2.7.7 三目运算符
 
 - bool ? a : b
 
-##### 运算符优先级
+##### 2.7.8 运算符优先级
 
 | 优先级 | 运算符                                       | 结合性   |
 | ------ | -------------------------------------------- | -------- |
@@ -353,7 +353,7 @@ public class Test {
 | 13     | ?:                                           | 从右向左 |
 | 14     | = += -= *= /= %= &= \|= ^=  ~=  <<= >>= >>>= | 从右向左 |
 
-#### 输入类
+#### 2.8 输入类
 
 ```java
 import java.util.Scanner; //接收键盘输入的工具类
@@ -375,7 +375,7 @@ String s1 = input.next();
 String s1 = input.nextLine();
 ```
 
-#### 随机数类
+#### 2.9 随机数类
 
 ```java
 import java.util.Random;
@@ -384,9 +384,9 @@ Random r = new Random(); // 生成随机数的实例
 int i = r.nextInt(16); // 获取16范围内的随机整数
 ```
 
-#### 语句
+#### 2.10 语句
 
-##### if条件语句
+##### 2.10.1 if条件语句
 ```java
 if (bol1) {
   // ...
@@ -398,7 +398,7 @@ if (bol1) {
 ```
 **注：**在实现分支判断时，尽量把匹配成功率高的判断放在前面，可以提高效率
 
-##### switch语句
+##### 2.10.2 switch语句
 
 - 表达式的返回值必须是下述6种类型之一：**char,byte, short,int（包括包装类Character、Byte、Short、Integer ）,枚举**，jdk1.7后支持**String**；
 
@@ -431,33 +431,33 @@ switch (表达式) {
   // ...
 }
 ```
-#### 循环语句
-##### while循环
+#### 2.11 循环语句
+##### 2.11.1 while循环
 ```java
 while (bool) {
   // ...
 }
 ```
-##### do-while循环
+##### 2.11.2 do-while循环
 ```java
 do {
   // ...
 } while (bool);
 ```
-##### for循环
+##### 2.11.3 for循环
 ```java
 for (初始化参数; 判断条件; 更新循环变量) {
   // 循环体;
 }
 ```
 
-#### 打印
+#### 2.12 打印
 - print：打印输出，但不换行
 - println：打印输出，且要换行
 
-### 方法
+### 3 方法
 
-#### 方法的格式
+#### 3.1 方法的格式
 
 - 实参和形参的类型要相互兼容，且实参的取值范围要小于或者等于形参类型的取值范围。
 - 若当前方法没有返回值类型，即返回值类型是 void，那么当前方法中可以不写 return，也可以写 return; 。
@@ -497,7 +497,7 @@ for (初始化参数; 判断条件; 更新循环变量) {
     }
   }
 ```
-#### 方法的重载(overloading)
+#### 3.2 方法的重载(overloading)
 
 **定义：** 在同一个类中可以创建多个方法，它们具有相同的名字，但具有不同的参数和不同的定义**（返回值不能作为重载的条件）**
 
@@ -510,22 +510,22 @@ public void method(char c) {
 }
 ```
 
-#### 方法的重写(overriding)
+#### 3.3 方法的重写(overriding)
 
 1. 发生在子父类中，方法重写的两个方法 **返回值、方法名、参数列表** 必须完全一致（子类重写父类的方法）
 2. 子类抛出的异常不能超过父类相应方法抛出的异常**（子类异常不能大于父类异常）**
 3. 子类方法的访问级别不能低于父类相应方法的访问级别**(子类访问级别不能低于父类访问级别)**
 4. 父类中的方法若使用 **private、static、final** 任意修饰符修饰，那么不能被子类重写。
 
-#### main方法
+#### 3.4 main方法
 
 main方法参数在执行java命令时传递：`java Test1 "字符串1" "字符串2"`
 
-### 数组
+### 4 数组
 
 - 数组是引用数据类型，是在栈内存里存放堆数据的地址；而八种基本数据类型的数据是直接存放在栈内存里的。
 
-#### 数组（包括多维数组）的赋值方式（4种）
+#### 4.1 数组（包括多维数组）的赋值方式（4种）
 
 1. 使用默认的初始值来初始化数组中的每一个元素  
   **语法：** 数组元素类型 [] 数组名 = new 数组元素类型[数组中元素的个数（数组的长度）];  
@@ -593,7 +593,7 @@ main方法参数在执行java命令时传递：`java Test1 "字符串1" "字符�
 
 ```
 
-#### 数组的遍历
+#### 4.2 数组的遍历
 
 ```java
     // 方式一
@@ -628,7 +628,7 @@ main方法参数在执行java命令时传递：`java Test1 "字符串1" "字符�
   }
 ```
 
-#### 常见数组异常
+#### 4.3 常见数组异常
 
 ```java
   // 数组空指针异常(NullPointerException)
@@ -644,7 +644,7 @@ main方法参数在执行java命令时传递：`java Test1 "字符串1" "字符�
   }
 ```
 
-#### 常用算法
+#### 4.4 常用算法
 
 - 冒泡排序法：  
   
@@ -664,7 +664,7 @@ main方法参数在执行java命令时传递：`java Test1 "字符串1" "字符�
   
   前提是在已经排好序的数组中，通过将待查找的元素与中间索引值对应的元素进行比较，若大于中间索引值对应的元素，去右半部分查找，否则，去左半部分查找。依此类推。直到找到为止；找不到返回一个负数。
 
-#### Arrays工具类的使用
+#### 4.5 Arrays工具类的使用
 
 ```java
 import java.util.Arrays;
@@ -689,7 +689,7 @@ Arrays.fill(newNum,0);
 
 **注：**数组复制的效率由高到低排序为：System.arraycopy  >  Arrays.copyOf  >  for
 
-### 类与对象
+### 5 类与对象
 
 定义一个 **类：**  
 
@@ -723,7 +723,7 @@ class 类名称{
 
 ```
 
-#### 成员变量与局部变量
+#### 5.1 成员变量与局部变量
 
 1. 在类中的位置不同 
 	成员变量：在类中定义 
@@ -740,7 +740,7 @@ class 类名称{
 
 **注意：**  局部变量名称可以和成员变量名称一样，在方法中使用的时候，采用的是就近原则。
 
-#### static 关键字的作用：
+#### 5.2 static 关键字的作用：
 
 1. 静态变量或方法不依赖对象实例，而是依赖该类**(可以直接用类名去获取或者调用)**
 2. 使用 static关键字修饰一个属性
@@ -754,7 +754,7 @@ class 类名称{
 
 ![](https://upload-images.jianshu.io/upload_images/5097954-2c10b966f7f93280.png)
 
-#### 权限关键字
+#### 5.3 权限关键字
 
 访问级别：public  >  protected  >  default  >  private
 
@@ -765,7 +765,7 @@ class 类名称{
 | default(默认) | √      | √                     | ×      | ×      |
 | private       | √      | ×                     | ×      | ×      |
 
-#### 构造方法
+#### 5.4 构造方法
 
 1. 构造方法名称与类名相同，没有返回值声明（包括 void）
 
@@ -785,7 +785,7 @@ class 类名称{
 
 9. **private Dog(){}，构造方法私有化，当我们的需求是为了 保正该类只有一个对象时**。什么时候一个类只需要一个对象？比如，工具类（没有属性的类，只有行为）并且该工具对象被频繁使用。权衡只用一个对象与产生多个对象的内存使用，来确定该类是否要定义为只需要一个对象。
 
-#### this
+#### 5.5 this
 
 1. 调用类中的属性
 
@@ -828,9 +828,7 @@ class Cat{
 }
 ```
 
-
-
-#### 代码块
+#### 5.6 代码块
 
 1. 普通代码块
 
@@ -893,9 +891,7 @@ class Student{
 }
 ```
 
-
-
-#### 单例设计模式
+#### 5.7 单例设计模式
 
 **满足要求：**
 
@@ -998,13 +994,13 @@ public class Singleton implements Serializable {
 }
 ```
 
-####volatile 关键字
+####5.8 volatile 关键字
 
 volatile 提醒编译器它后面所定义的变量随时都有可能改变，因此编译后的程序每次需要存储或读取这个变量的时候，都会直接从变量地址中读取数据。如果没有 volatile 关键字，则编译器可能优化读取和存储，可能暂时使用寄存器中的值，如果这个变量由别的程序更新了的话，将出现不一致的现象。
 
-### 继承
+### 6 继承
 
-#### 要点
+#### 6.1 要点
 
 1. 被继承的类称为父类（超类），继承父类的类称为子类（派生类）
 2. 继承使用关键字extends
@@ -1016,13 +1012,13 @@ volatile 提醒编译器它后面所定义的变量随时都有可能改变，�
 8. 在子类进行实例化操作的时候，首先会先让其父类进行初始化操作。之后子类再自己进行实例化操作。
 9. 实例化子类对象，会先调用父类的构造方法，如果父类中没有默认的构造方法，那么子类必须显示的通过super(...)来调用父类的带参构造方法，super也只能在子类构造方法中的第一句。
 
-#### super
+#### 6.2 super
 
 1. 使用super调用父类中的属性，可以从 **父类实例** 处获得信息。
 2. 使用super调用父类中的方法，可以委托 **父类实例** 帮助完成某件事情。
 3. 使用super调用父类中的构造方法（super(实参)），必须在子类构造方法的第一条语句，调用父类中相应的构造方法，若不显示的写出来，默认调用父类的无参构造方法，比如：super();
 
-#### final
+#### 6.3 final
 
 1. 使用final关键字声明一个常量
 
@@ -1040,7 +1036,7 @@ volatile 提醒编译器它后面所定义的变量随时都有可能改变，�
 
 4. 在方法参数中使用final，在该方法内部不能修改参数的值
 
-#### 抽象类
+#### 6.4 抽象类
 
 1. 抽象类使用 **abstract** 关键字声明
 2. 抽象类可以没有抽象方法，有抽象方法的类必须是抽象类
@@ -1057,7 +1053,7 @@ abstract class Animal{
 }
 ```
 
-#### 接口
+#### 6.5 接口
 
 1. 定义一个接口，使用 **interface** 关键字
 2. 在一个接口中，只能定义常量、抽象方法，**JDK1.8后可以定义默认的实现方法**
@@ -1111,7 +1107,7 @@ class Girl implements ISleep,IEat{
 }
 ```
 
-#### 多态性
+#### 6.6 多态性
 
 多态性我们大概可以分为两类：
 
@@ -1121,19 +1117,19 @@ class Girl implements ISleep,IEat{
 4. **子类对象指向父类引用需要强制转换（注意：类型不对会报异常）**
 5. 在实际开发中尽量使用父类引用，即向上转型（更利于扩展）
 
-##### 向上转型 (自动转换)
+##### 6.6.1 向上转型 (自动转换)
 
 用父类的引用指向子类对象（用大的类型去接受小的类型）
 
 格式：父类 父类对象 = 子类实例
 
-##### 向下转型 (强制转换)
+##### 6.6.2 向下转型 (强制转换)
 
 用子类的引用指向父类对象（用小的类型去接受大的类型）
 
 格式：子类 子类对象 = （子类）父类实例
 
-##### instanceof
+##### 6.6.3 instanceof
 
 返回值为 boolean 型
 
@@ -1154,18 +1150,18 @@ if(s instanceof Son){
 }
 ```
 
-##### 父类的设计建议
+##### 6.6.4 父类的设计建议
 
 通过instanceof关键字，我们可以很方便 的检查对象的类型，但如果一个父类的子类过多，这样的判断还是显得很繁琐，下面是设计父类的一些建议
 
 1. 父类通常情况下都设计为抽象类或接口，其中优先考虑接口，如接口不能满足才考虑抽象类。
 2. 一个具体的类尽可能不去继承另一个具体类，这样的好处是无需检查对象是否为父类的对象。
 
-#### Object 类
+#### 6.7 Object 类
 
 所有类都是Object类的子类
 
-##### Object 方法
+##### 6.7.1 Object 方法
 
 1. public String **toString**()
 
@@ -1183,9 +1179,9 @@ if(s instanceof Son){
 
    返回此 Object 的运行时类。
 
-#### 内部类
+#### 6.8 内部类
 
-##### 要点
+##### 6.8.1 要点
 
 1. 内部类就是在一个类的内部定义的类。主要有 成员内部类、方法内部类、静态内部类、匿名内部类
 
@@ -1193,21 +1189,21 @@ if(s instanceof Son){
 3. 静态内部类不依赖外部类的对象。所以，我们在项目中优先考虑选择静态内部类（不会产生内存泄露）
 4. 每个内部类都能独立地继承自一个（接口的）实现，所以无论外部类是否已经继承了某个（接口的）实现，对于内部类都没有影响。如果没有内部类提供的可以继承多个具体的或抽象的类的能力，一些设计与编程问题就很难解决。从这个角度看，内部类使得多重继承的解决方案变得完整。接口解决了部分问题，而内部类有效地实现了“多重继承”。
 
-##### 成员内部类(成员)
+##### 6.8.2 成员内部类(成员)
 
 1. 成员内部类除了可以在外部类中产生实例化对象，也可以在外部类的外部来实例化。
 2. 根据内部类生成的class文件：Outer\$Inner.class，“\$”符号在程序运行时将替换成“.”，通过Outer.Inner表示
 
-##### 静态内部类(成员)
+##### 6.8.3 静态内部类(成员)
 
 1. 该内部类可以像其他静态成员一样，没有外部类对象时，也能够访问它。静态嵌套类仅能访问外部类的静态成员和方法。
 
-##### 方法内部类(局部)
+##### 6.8.4 方法内部类(局部)
 
 1. 方法内部类只能在定义该内部类的方法内实例化，不可以在此方法外对其实例化。
 2. 方法内部类对象不能使用该内部类所在方法的非 final 局部变量。
 
-##### 匿名内部类(局部)
+##### 6.8.5 匿名内部类(局部)
 
 1. 匿名内部类就是没有名字的内部类。
 2. 匿名内部类的三种情况
@@ -1292,13 +1288,13 @@ class Outer {
 
 **注：在jdk1.8中取消了在局部内部类中使用的变量必须显示的使用 final 修饰，编译器默认会为这个变量加上final**
 
-#### 包
+#### 6.9 包
 
 包定义语句只能出现在代码中的第一句
 
 如：`package com.vince;`
 
-#### OO 原则
+#### 6.10 OO 原则
 
 1. 开闭原则
 
@@ -1328,9 +1324,9 @@ class Outer {
 
    不要存在多于一个导致类变更的原因，即一个类只负责一项职责。
 
-### 异常
+### 7 异常
 
-#### 要点
+#### 7.1 要点
 
 1. Throwable 是异常的基类，分为 Error 和 Exception，在编程中我们关注 Exception
 2. Exception 分为编译期异常(受检)和运行期异常（非受检）
@@ -1339,7 +1335,7 @@ class Outer {
 5. 处理异常可以让程序保持运行状态
 6. catch 可以有多个，顺序为从子类到父类，小的放前面，大的放后面
 
-#### 异常分类
+#### 7.2 异常分类
 
 - ArithmeticException
 
@@ -1352,7 +1348,7 @@ class Outer {
  *              DataFormatException
  *              ClassCastException
 
-#### try、catch 和 finally 关键字
+#### 7.3 try、catch 和 finally 关键字
 
 **异常处理的语法规则**
 
@@ -1383,30 +1379,30 @@ try (BufferedReader br = new BufferedReader(new InputStreamReader(System.in))) {
 }
 ```
 
-#### throw 与 throws 关键字
+#### 7.4 throw 与 throws 关键字
 
 1. throws 关键字主要在方法的声明上使用，表示方法中不处理异常，而交给调用处处理。实际上对于 Java 程序来讲，如果没有加入任何的异常处理，默认由 JVM 进行异常的处理操作。
 2. throw 关键字表示在程序中手动抛出一个异常，因为从异常处理机制来看，所有的异常一旦产生之后，实际上抛出的就是一个异常类的实例化对象，那么此对象也可以由 throw 直接抛出。
 
-#### 异常处理过程分析
+#### 7.5 异常处理过程分析
 
 1. 一旦产生异常，则系统会自动产生一个异常类的实例化对象。
 2. 此时如果存在了 try 语句，则会自动找到匹配的 catch 语句执行，如果没有异常处理，则程序将退出，并由系统报告错误。
 3. 所有的 catch 根据方法的参数匹配异常类的实例化对象，如果匹配成功，则表示由此 catch 进行处理。
 
-#### 受检异常/非受检异常
+#### 7.6 受检异常/非受检异常
 
-##### 受检异常(Exception)
+##### 7.6.1 受检异常(Exception)
 
 ​	定义方法时必须声明所有可能会抛出的 Exception，在调用这个方法时，**必须捕获它的 checked exception**，不然就得把它的 Exception 传递下去，**Exception** 是从 **java.lang.Exception** 类衍生出来的。例如： **IOException**， **SQLException** 就属于 **Exception**
 
-##### 非受检异常(RuntimeException)
+##### 7.6.2 非受检异常(RuntimeException)
 
 ​	在定义方法时不需要声明会抛出 RuntimeException,在调用这个方法时**不需要捕获这个 RuntimeException**， **RuntimeException** 是从 **java.lang.RuntimeException** 或 **java.lang.Error** 类衍生出来的。 例如：**NullPointException**，**IndexOutOfBoundsException** 就属于 **RuntimeException**
 
 ![](https://upload-images.jianshu.io/upload_images/5097954-602dae88697a8c65.png)
 
-#### 自定义异常
+#### 7.7 自定义异常
 
 ```java
 package com.vince.ex;
@@ -1429,11 +1425,9 @@ public class MyException extends RuntimeException{
 }
 ```
 
+#### 7.8 assert(断言)
 
-
-#### assert(断言)
-
-##### 格式
+##### 7.8.1 格式
 
 1. assert  Boolean；
 
@@ -1453,7 +1447,7 @@ public static void main(String[] args) {
 }
 ```
 
-##### debug
+##### 7.8.2 debug
 
 debug as  —>  Java Application
 
@@ -1469,11 +1463,11 @@ debug as  —>  Java Application
 
 ​	Ctrl+R：执行到光标所在的这一行
 
-### 常用类库
+### 8 常用类库
 
-#### String类
+#### 8.1 String类
 
-##### 赋值方式
+##### 8.1.1 赋值方式
 
 ```java
 // 方式一 直接赋值(推荐)，只创建1个对象(常量池中的小白)
@@ -1483,7 +1477,7 @@ String name = "小白";
 String name =  new String("小白");
 ```
 
-##### String编译期与运行期分析
+##### 8.1.2 String编译期与运行期分析
 
 如果在编译期值可以被确定，那么就使用已有的对象，否则会创建新的对象。
 
@@ -1510,9 +1504,9 @@ String d2 = "d1";
 System.out.println(d1 == d2); // false (因为方法在运行期才会返回结果)
 ```
 
-#### String方法
+#### 8.2 String方法
 
-##### 字符与字符串操作方法
+##### 8.2.1字符与字符串操作方法
 
 | No   | 方法名称                                           | 类型 | 描述                                 |
 | ---- | -------------------------------------------------- | ---- | ------------------------------------ |
@@ -1521,7 +1515,7 @@ System.out.println(d1 == d2); // false (因为方法在运行期才会返回结�
 | 3    | public String(char[] value)                        | 构造 | 将全部的字符数组变为字符串           |
 | 4    | public String(char[] value,int offset,int   count) | 构造 | 将指定范围的字符数组变为字符串       |
 
-##### 字节与字符串操作方法
+##### 8.2.2 字节与字符串操作方法
 
 | No.  | 方法名称                                            | 类型 | 描述                                                         |
 | ---- | --------------------------------------------------- | ---- | ------------------------------------------------------------ |
@@ -1530,7 +1524,7 @@ System.out.println(d1 == d2); // false (因为方法在运行期才会返回结�
 | 3    | public String(byte[] bytes,int offset,int   length) | 构造 | 将指定范围的字节数组变为字符串                               |
 | 4    | public String(byte[] bytes,   String charsetName)   | 构造 | 通过使用指定的 charset 解码指定的 byte 数组，构造一个新的 String |
 
-##### 判断是否以指定内容开头或结尾
+##### 8.2.3 判断是否以指定内容开头或结尾
 
 | No.  | 方法名称                                               | 类型 | 描述                                     |
 | :--- | ------------------------------------------------------ | ---- | ---------------------------------------- |
@@ -1538,7 +1532,7 @@ System.out.println(d1 == d2); // false (因为方法在运行期才会返回结�
 | 2    | public boolean startsWith(String   prefix,int toffset) | 普通 | 从指定的位置开始判断是否以指定的内容开头 |
 | 3    | public boolean endsWith(String suffix)                 | 普通 | 判断是否以指定的内容结尾                 |
 
-##### 替换操作
+##### 8.2.4 替换操作
 
 | No.  | 方法名称                                                     | 类型 | 描述                       |
 | ---- | ------------------------------------------------------------ | :--- | -------------------------- |
@@ -1547,21 +1541,21 @@ System.out.println(d1 == d2); // false (因为方法在运行期才会返回结�
 | 3    | public String replaceAll(String   regex,String replacement)  | 普通 | 替换指定的字符串           |
 | 4    | public String replaceFirst(String   regex,String replacement) | 普通 | 替换第一个满足条件的字符串 |
 
-##### 截取操作
+##### 8.2.5 截取操作
 
 | No.  | 方法名称                                             | 类型 | 描述                         |
 | ---- | ---------------------------------------------------- | ---- | ---------------------------- |
 | 1    | public String substring(int beginIndex)              | 普通 | 从指定位置开始一直截取到末尾 |
 | 2    | public String substring(int beginIndex,int endIndex) | 普通 | 截取指定范围的字符串         |
 
-##### 字符串拆分操作
+##### 8.2.6 字符串拆分操作
 
 | No.  | 方法名称                                        | 类型 | 描述                         |
 | ---- | ----------------------------------------------- | ---- | ---------------------------- |
 | 1    | public String[] split(String regex)             | 普通 | 按照指定的字符串拆分         |
 | 2    | public String[] split(String regex,int   limit) | 普通 | 拆分字符串，并指定拆分的个数 |
 
-##### 字符串查找操作
+##### 8.2.7 字符串查找操作
 
 | No.  | 方法名称                                       | 类型 | 描述                                                         |
 | ---- | ---------------------------------------------- | ---- | ------------------------------------------------------------ |
@@ -1575,7 +1569,7 @@ System.out.println(d1 == d2); // false (因为方法在运行期才会返回结�
 | 8    | public int lastIndexOf(String   str)            | 普通 | 从字符串的最后向前查找，指定的字符串是否存在，如果存在则返回位置，如果不存在则返回“-1”。 |
 | 9    | public int lastIndexOf(String   str,int fromIndex) | 普通 | 从字符串的指定的末尾向前查找，指定的字符串是否存在，如果存在则返回位置，如果不存在则返回“-1”。 |
 
-##### 其它操作方法
+##### 8.2.8 其它操作方法
 
 | No.  | 方法名称                         | 类型 | 描述                                 |
 | ---- | -------------------------------- | ---- | ------------------------------------ |
@@ -1586,11 +1580,11 @@ System.out.println(d1 == d2); // false (因为方法在运行期才会返回结�
 | 5    | public String trim()             | 普通 | 去掉开头和结尾的空格，中间的空格不去 |
 | 6    | public String concat(String str) | 普通 | 字符串连接操作                       |
 
-#### StringBuffer类
+#### 8.3 StringBuffer类
 
 StringBuffer 的内部实现采用字符数组，默认数组的长度为16，超过数组大小时，动态扩充的算法是原来长度*2+2，所以当我们预知要添加的数据长度时，建议使用带初始化容量的构造方法，来避免动态扩充的次数，从而提高效率，线程安全的，会影响性能，
 
-##### StringBuffer常用操作方法
+##### 8.3.1 StringBuffer常用操作方法
 
 | **方法名称**                                              | **描述**                                     |
 | --------------------------------------------------------- | -------------------------------------------- |
@@ -1606,7 +1600,7 @@ StringBuffer 的内部实现采用字符数组，默认数组的长度为16，�
 | public String substring(int   start)                      | 字符串截取                                   |
 | public StringBuffer reverse()                             | 字符串反转                                   |
 
-##### String，StringBuffer 与 StringBuilder 的区别
+##### 8.3.2 String，StringBuffer 与 StringBuilder 的区别
 
 1. StringBuffer 是线程安全的，性能低，适合在多线程的使用，jdk1.0
 2. StringBuilder 是线程不安全的，性能高，适合在单线程中使用，这种情况占多大数,在jdk1.5后添加
@@ -1637,9 +1631,9 @@ StringBuffer 上的主要操作是 append 和 insert 方法，可重载这些方
 **在大部分情况下 StringBuilder > StringBuffer**
 	java.lang.StringBuilder一个可变的字符序列是5.0新增的。此类提供一个与 StringBuffer 兼容的 API，**但不保证同步**。该类被设计用作 StringBuffer 的一个简易替换，**用在字符串缓冲区被单个线程使用的时候**（这种情况很普遍）。如果可能，建议优先采用该类，因为在大多数实现中，它比 StringBuffer 要快。两者的方法基本相同。
 
-#### 程序国际化
+#### 8.4 程序国际化
 
-##### Locale类
+##### 8.4.1 Locale类
 
 - Locale(String language)  // 构造方法
 
@@ -1647,7 +1641,7 @@ StringBuffer 上的主要操作是 append 和 insert 方法，可重载这些方
 
 - getDefault() // 获取当前系统的默认语言环境
 
-##### ResourceBundle类
+##### 8.4.2 ResourceBundle类
 
 表示的是一个资源文件的读取操作，所有的资源文件需要使用ResourceBundle进行读取，读取的时候不需要加上文件的后缀。
 
@@ -1657,7 +1651,7 @@ StringBuffer 上的主要操作是 append 和 insert 方法，可重载这些方
 
 - getString(String key) // 从属性文件中使用key来获取value
 
-##### MessageFormat类
+##### 8.4.3 MessageFormat类
 
 - format(String pattern, Object... arguments)  // 使用给定的模式创建一个MessageFormat，并使用它来格式化给定的参数。
 
@@ -1724,9 +1718,9 @@ public class I18NDemo {
 }
 ```
 
-#### Math类
+#### 8.5 Math类
 
-##### 方法
+##### 8.5.1 方法
 
 | 方法  | 释义                       |
 | ------------------- | ------------------------------------------------------------ |
@@ -1736,7 +1730,7 @@ public class I18NDemo {
 | **round**(double a) | 返回最接近参数并等于某一整数的   double   值                 |
 | **sqrt**(double a)  | 返回正确舍入的   double   值的正平方根                       |
 
-#### Random类
+#### 8.6 Random类
 
 用于生成**伪随机数**
 
@@ -1749,15 +1743,15 @@ public class I18NDemo {
 | nextInt()      | 返回下一个伪随机数，int 值                                   |
 | nextInt(int n) | 返回一个伪随机数，在   0（包括）和指定值分布的 int 值        |
 
-#### Date类
+#### 8.7 Date类
 
 Date 类表示特定的瞬间，精确到毫秒，也就是程序运行时的当前时间。
 
-#### Calendar类
+#### 8.8 Calendar类
 
 日历类，使用此类可以将时间精确到毫秒显示。
 
-#### DateFormat类 及 子类SimpleDateFormat
+#### 8.9 DateFormat类 及 子类SimpleDateFormat
 
 日期格式化类
 
@@ -1795,16 +1789,16 @@ public class DateDemo {
 }
 ```
 
-#### 对象比较器
+#### 8.10 对象比较器
 
 继承并实现相关比较器接口就可以使用 **Arrays.sort()** 进行排序
 
-#####Comparable接口
+#####8.10.1 Comparable接口
 
 1. 此接口强行对实现它的每个类的对象进行整体排序，这种排序被称为类的自然排序，类的
    **compareTo** 方法被称为它的自然比较方法。
 
-##### Comparator接口
+##### 8.10.2 Comparator接口
 
 1. Comparable接口是要求自定义类去实现。
 2. 强行对某个对象 collection 进行整体排序的比较。
@@ -1885,9 +1879,9 @@ public class Test {
 }
 ```
 
-#### 对象的克隆
+#### 8.11 对象的克隆
 
-##### Cloneable接口
+##### 8.11.1 Cloneable接口
 
 如果某个类的对象要想被克隆，则对象所在的类必须实现 Cloneable 接口。此接口没有定义任何方法，是一个标记接口。
 
@@ -1941,15 +1935,15 @@ public class Test {
 }
 ```
 
-#### System类
+#### 8.12 System类
 
 System类代表系统，系统级的很多属性和控制方法都放置在该类的内部。该类位于java.lang包。
 
-##### 成员变量
+##### 8.12.1 成员变量
 
 System类内部包含**in**、**out** 和 **err** 三个成员变量，分别代表标准输入流(键盘输入)，标准输出流(显示器)和标准错误输出流。
 
-##### 成员方法
+##### 8.12.2 成员方法
 
 1. **public static void arraycopy(Object src, int srcPos, Object dest, int destPos, int length)**
 
@@ -2002,7 +1996,7 @@ public class SystemDemo {
 }
 ```
 
-#### Runtime类
+#### 8.13 Runtime类
 
 每个 Java 应用程序都有一个 Runtime 类实例，使应用程序能够与其运行的环境相连接。
 
@@ -2031,7 +2025,7 @@ public class SystemDemo {
 }
 ```
 
-#### MD5/Base64
+#### 8.14 MD5/Base64
 
 **注：**jdk1.8之前使用sun.misc.BASE64Encoder(此类在 rt.jar > sun/misc/\*下，但是没有访问权限，需要在rt.jar中添加访问权限：sun/misc/*)
 
@@ -2079,7 +2073,7 @@ public class MD5Demo {
 }
 ```
 
-#### 二叉树
+#### 8.15 二叉树
 
 树是一种重要的非线性数据结构，直观地看，它是数据元素（在树中称为结点）按分支关系组织起来的结构。二叉树（Binary Tree）是每个节点最多有两个子树的有序树。通常子树被称作 **左子树** 和 **右子树**。
 
@@ -2089,9 +2083,9 @@ public class MD5Demo {
 
 3. 最后按照中序遍历的方式进行输出，则可以得到排序的结果（左 > 根 > 右）
 
-#### Lambda表达式
+#### 8.16 Lambda表达式
 
-##### 要点
+##### 8.16.1 要点
 
 1. **jdk1.8** 的 Lambda 表达式（也称为闭包）是整个Java 8发行版中最受期待的在Java语言层面上的改变，Lambda允许把函数作为一个方法的参数（函数作为参数传递进方法中），或者把代码看成数据。Lambda表达式用于简化JAVA中接口式的匿名内部类，被称为函数式接口的概念，**函数式接口就是一个具有一个方法的普通接口**，像这样的接口，可以被隐式转换为lambda表达式。
 
@@ -2155,13 +2149,13 @@ interface IEat{
 }
 ```
 
-### 文件与IO
+### 9 文件与IO
 
-#### File类
+#### 9.1 File类
 
 可以实现文件的创建、删除、重命名、得到路径、创建时间等等，是唯一与文件本身有关的操作类。
 
-##### File类方法
+##### 9.1.1 File类方法
 
 | 方法                                   | 释义                       |
 | -------------------------------------- | -------------------------- |
@@ -2246,7 +2240,7 @@ public class FileDemo {
 }
 ```
 
-#### IO流
+#### 9.2 IO流
 
 - 根据处理数据类型的不同分为：**字符流** 和 **字节流**
 
@@ -2254,17 +2248,17 @@ public class FileDemo {
 
 ![](https://upload-images.jianshu.io/upload_images/5097954-58affea05274b720.png)
 
-#### 字节流
+#### 9.3 字节流
 
 - **每次只会操作一个字节**
 
-##### OutputStream类 (字节输出流)
+##### 9.3.1 OutputStream类 (字节输出流)
 
 - public **abstract class** OutputStream extends Object implements Closeable, Flushable
 
 - **此抽象类是表示输出字节流的所有类的超类**，输出流接受输出字节并将这些字节发送到 InputStream 类某个接收器要向文件中输出，使用 **FileOutputStream** 文件操作类
 
-##### InputStream类 (字节输入流)
+##### 9.3.2 InputStream类 (字节输入流)
 
 - public **abstract class** InputStream extends Object implements Closeable 
 
@@ -2317,17 +2311,17 @@ public class ByteStreamDemo {
 }
 ```
 
-#### 字符流
+#### 9.4 字符流
 
 - **每次操作的单位是一个字符**
 
 - 文件字符操作流会自带缓存，默认大小为1024字节，在缓存满后，或手动刷新缓存，或关闭流时会把数据写入文件
 
-##### Writer类 (字符输出流)
+##### 9.4.1 Writer类 (字符输出流)
 
 - 写入字符流的抽象类，子类必须实现的方法仅有 write(char[], int, int)、flush() 和 close()。但是，多数子类将重写此处定义的一些方法，以提供更高的效率和/或其他功能。使用 **FileWriter** 文件操作类。
 
-##### Reader类 (字符输入流)
+##### 9.4.2 Reader类 (字符输入流)
 
 - 用于读取字符流的抽象类，子类必须实现的方法只有 read(char[], int, int) 和 close()。但是，多数子类将重写此处定义的一些方法，以提供更高的效率和/或其他功能。使用 **FileReader** 文件操作类。
 
@@ -2372,12 +2366,12 @@ public class CharStreamDemo {
 }
 ```
 
-#### 如何选择使用字节流还是字符流
+#### 9.5 如何选择使用字节流还是字符流
 
 1. 一般操作**非**文本文件时，使用字节流。操作文本文件时，建议使用字符流。
 2. 如果你确认你要处理的流是可打印的字符，那么使用字符流会看上去简单一点。如果不确认，那么用字节流总是不会错的。
 
-#### 转换流
+#### 9.6 转换流
 
 - **OutputStreamWriter：**可以将输出的字符流转换为字节流的输出形式
 - **InputStreamReader：**将输入的字节流转换为字符流输入形式
@@ -2428,7 +2422,7 @@ public class ChangeStreamDemo {
 }
 ```
 
-#### 缓存流
+#### 9.7 缓存流
 
 - 使用缓冲流的好处是，能够更高效的读写信息，原理是将数据先缓冲起来，然后一起写入或者读取出来。
 - **BufferedInputStream**
@@ -2528,7 +2522,7 @@ public class BufferStreamDemo {
 }
 ```
 
-#### 打印流
+#### 9.8 打印流
 
 - 很方便的进行输出**并打印到指定的文件**
 - **PrintStream**：字节打印流
@@ -2577,13 +2571,13 @@ public class PrintStreamDemo {
 }
 ```
 
-#### 对象流
+#### 9.9 对象流
 
 - 如果一个类创建的对象，需要被序列化，那么该类必须实现 **Serializable** 接口，Serializable 是一个标记接口，没有任何定义，为了告诉 JVM 该类对象可以被序列化。如果对象没有实现 Serializable 接口，会报抛**java.io.NotSerializableException** 的异常。
 - **ObjectOutputStream**： 将 Java 对象的基本数据类型和图形写入 OutputStream，即 **序列化**。
 - **ObjectInputStream**： 对以前使用 ObjectOutputStream 写入的基本数据和对象进行 **反序列化**。
 
-##### transient关键字
+##### 9.9.1 transient关键字
 
 如果用transient声明一个实例变量，当对象存储时，它的值不需要维持
 
@@ -2655,7 +2649,7 @@ public class Dog implements Serializable{
 }
 ```
 
-#### 字节数组流
+#### 9.10 字节数组流
 
 - **场景**：可以让你**从一个字节数组来读取流**，或者当你有一个组件需要把数据写出到 OutputStream，但是你需要用到字节数组。
 - 基于内存操作，内部维护着一个字节数组，我们可以利用流的读取机制来处理字符串。
@@ -2685,7 +2679,7 @@ public class ByteArrayStreamDemo {
 }
 ```
 
-#### 数据流
+#### 9.11 数据流
 
 - **场景**：实现文件分割合并。
 - 与机器无关的操作JAVA的**基本数据类型**。
@@ -2742,11 +2736,11 @@ public class DataStreamDemo {
 }
 ```
 
-####  合并流
+####  9.12 合并流
 
 - **SequenceInputStream** ：表示其他输入流的逻辑串联，它从输入流的有序集合开始，并从第一个输入流开始读取，直到到达文件末尾，接着从第二个输入流读取，依次类推，直到到达包含的最后一个输入流的文件末尾为止。
 
-##### 文件合并案例
+##### 9.12.1 文件合并案例
 
 ```java
 // ====== 文件分割合并示例 ======
@@ -2849,7 +2843,7 @@ public class FileDivisionMergeDemo {
 }
 ```
 
-#### 字符串流
+#### 9.13 字符串流
 
 - 以一个字符串为数据源，来构造一个**字符流**
 - **场景**：在WEB开发中，我们经常要从服务器上获取数据，数据的返回格式通过是一个字符串（XML, JSON），我们需要把这个字符串构造成一个字符流，然后再用第三方的数据解析器来解析数据。
@@ -2885,7 +2879,7 @@ public class StringStreamDemo {
 }
 ```
 
-#### 管道流
+#### 9.14 管道流
 
 - 管道输入流应该连接到管道输出流；管道输入流提供要写入管道输出流的所有数据字节。通常，数据由某个线程从 PipedInputStream 对象读取，并由其他线程将其写入到相应的 PipedOutputStream。不建议对这两个对象尝试使用单个线程，因为这样可能死锁线程。管道输入流包含一个缓冲区，可在缓冲区限定的范围内将读操作和写操作分离开。如果向连接管道输出流提供数据字节的线程不再存在，则认为该管道已损坏。
 - **场景**：用于线程之间的数据通讯
@@ -2948,7 +2942,7 @@ public class PipedStreamDemo {
 }
 ```
 
-#### RandomAccessFile 类
+#### 9.15 RandomAccessFile 类
 
 - RandomAccessFile 是 IO 包的类，从 Object 直接继承而来。 只可以对文件进行操作，可以对文件进行读取和写入。
 - 当模式为 **r** 时，文件不存在时会报异常。
@@ -2982,12 +2976,12 @@ public class RandromAccessFileDemo {
 }
 ```
 
-#### Properties 类
+#### 9.16 Properties 类
 
 - 主要用于读取 Java 的 properties 配置文件，各种语言都有自己所支持的配置文件，配置文件中很多变量是经常改变的，这样做也是为了方便用户，让用户能够脱离程序本身去修改相关的变量设置。在 javaweb javaee 开发中通常会用到。
 - **Properties** 不仅可以读取，还能够写入 properties 配置文件。**但是**，**ResouceBundle** 只能读取 properties 配置文件。
 
-##### 方法
+##### 9.16.1 方法
 
 - **getProperty ( String key)**：用指定的键在此属性列表中搜索属性，也就是通过参数 key ，得到 key 所对应的 value。
 
@@ -3044,7 +3038,7 @@ public class PropertiesDemo {
 }
 ```
 
-#### 文件压缩与解压缩
+#### 9.17 文件压缩与解压缩
 
 - **ZipOutputStream**
 
@@ -3149,7 +3143,7 @@ public class CompressionAndDecompressionDemo {
 }
 ```
 
-#### 装饰者模式
+#### 9.18 装饰者模式
 
 - **Component**（被装饰对象基类）
 
@@ -3251,9 +3245,9 @@ public class Test {
 }
 ```
 
-### NIO
+### 10 NIO
 
-#### 要点
+#### 10.1 要点
 
 - **为什么要使用 NIO ?**
 
@@ -3329,7 +3323,7 @@ public class NIODemo {
 }
 ```
 
-##### 复制文件案例
+##### 10.1.1复制文件案例
 
 ```java
 // ====== 复制文件案例 ======
@@ -3385,7 +3379,7 @@ public class CopyFileDemo {
 }
 ```
 
-#### Path 接口，Paths 类，Files 类
+#### 10.2 Path 接口，Paths 类，Files 类
 
 - **Path 接口，Paths 类**
   1. Path表示的是一个目录名序列，其后还可以跟着一个文件名，路径中第一个部件是根部件时就是绝对路径，例如 / 或 C:\ ，而允许访问的根部件取决于文件系统。
@@ -3466,7 +3460,7 @@ public class PathFilesDemo {
 }
 ```
 
-### 集合
+### 11 集合
 
 集合中分为三大接口：**Collection**、**Iterator**、**Map**
 
@@ -3474,13 +3468,13 @@ public class PathFilesDemo {
 
 https://upload-images.jianshu.io/upload_images/5097954-97764e273e4b9d1c.png
 
-#### Collection 接口
+#### 11.1 Collection 接口
 
 - **定义：**public interface **Collection<E>** extends Iterable<E>
 - Collection 层次结构中的 **根接口**。
 - Collection **用于存储单个对象的集合**，表示一组对象，这些对象也称为 Collection 的元素。一些 Collection 允许有重复的元素，而另一些则不允许。一些 Collection 是有序的，而另一些则是无序的。JDK 不提供此接口的任何直接实现，它提供更具体的子接口（如 Set 和 List）实现。此接口通常用来传递 Collection，并在需要最大普遍性的地方操作这些 Collection。 
 
-#### List 接口
+#### 11.2 List 接口
 
 - **定义：**public interface **List<E>** extends Collection<E>
 - **有序且可以重复的 collection**（也称为**序列**）。
@@ -3492,7 +3486,7 @@ https://upload-images.jianshu.io/upload_images/5097954-97764e273e4b9d1c.png
   2. 是否频繁插入，删除操作（LinkedList）
   3. 是否是存储后遍历
 
-##### ArrayList 类
+##### 11.2.1 ArrayList 类
 
 - **定义：**public class **ArrayList**<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, Serializable
 
@@ -3503,7 +3497,7 @@ https://upload-images.jianshu.io/upload_images/5097954-97764e273e4b9d1c.png
 - **多线程中使用不安全，适合 在单线程访问时使用，效率较高**
 - jdk1.2 开始
 
-##### Vector 类
+##### 11.2.2 Vector 类
 
 - **定义：**public class **Vector**<E> extends AbstractList<E> implements List<E>, RandomAccess, Cloneable, Serializable
 - Vector 类可以实现可增长的对象数组。与数组一样，它包含可以使用整数索引进行访问的组件。但是，Vector 的大小可以根据需要增大或缩小，以适应创建 Vector 后进行添加或移除项的操作。 
@@ -3513,7 +3507,7 @@ https://upload-images.jianshu.io/upload_images/5097954-97764e273e4b9d1c.png
 - 为了防止数组动态扩充次数过多，建议创建 Vector 时，给定初始容量
 - **线程安全，适合在多线程访问时使用，在单线程下使用效率较低**
 
-##### LinkedList 类
+##### 11.2.3 LinkedList 类
 
 - **定义：**public class **LinkedList**<E> extends AbstractSequentialList<E> implements List<E>, Deque<E>, Cloneable, Serializable
 - 实现原理，**采用双向链表结构实现**
@@ -3564,7 +3558,7 @@ public class ListDemo {
 }
 ```
 
-#### Set 接口
+#### 11.3 Set 接口
 
 - **定义：**public interface **Set<E>** extends Collection<E>
 - 一个不包含重复元素的 collection。更确切地讲，set 不包含满足 e1.equals(e2) 的元素对 e1 和 e2，并且最多包含一个 null 元素。
@@ -3580,14 +3574,14 @@ public class ListDemo {
    * 如果不要排序，也不用保正顺序选择 HashSet
    * 不要排序，要保正顺序，选择 LinkedHashSet
 
-##### TreeSet 类
+##### 11.3.1 TreeSet 类
 
 - **定义：**public class **TreeSet**<E> extends AbstractSet<E> implements NavigableSet<E>, Cloneable, Serializable
 - 实现原理：**基于TreeMap(二叉树数据结构)，对象需要比较大小，通过对象比较器来实现，因为对象比较器可以用来去除重复的元素**
 - **有序的**，使用元素的自然顺序对元素进行排序，或者根据创建 set 时提供的 Comparator 进行排序，具体取决于使用的构造方法。
 - **如果自定义的数据类，没有实现比较器接口，将无法添加到 TreeSet 集合中**
 
-##### HashSet 类
+##### 11.3.2 HashSet 类
 
 - **定义：**public class **HashSet**<E> extends AbstractSet<E> implements Set<E>, Cloneable, Serializable
 
@@ -3598,7 +3592,7 @@ public class ListDemo {
 - 判断两个对象是否相同，**先** 判断两个对象的 **hashCode** 是否相同，如果不同，则两个对象不是同一个对象，如果相同，**再** 进行 **equals** 判断，equals 相同则是同一个对象，不同则不是同一个对比象。
 - **自定义对象要认为属性值都相同时为同一个对象，有这种需求时，那么我们要重写对象所在类的 hashCode 和 equals 方法。**
 
-##### LinkedHashSet 类
+##### 11.3.3 LinkedHashSet 类
 
 - **定义：**public class **LinkedHashSet**<E> extends HashSet<E> implements Set<E>, Cloneable, Serializable
 - 实现原理：**哈希表+链表 实现，维护着一个运行于所有条目的双重链表。按照插入顺序（即将元素插入到 set 中的顺序）进行迭代。**
@@ -3707,13 +3701,13 @@ public class Cat {
 }
 ```
 
-#### 集合遍历
+#### 11.4 集合遍历
 
 - 遍历集合的方式有以下几种：**Iterator**，**ListIterator**，**Enumeration** ，**foreach**
 
 - **其中 Iterator 的使用率最高，在 jdk1.5 后新增的 foreach 也被大量使用**
 
-##### Iterator 接口
+##### 11.4.1 Iterator 接口
 
 - 定义：public interface **Iterator**<E>
 - 对 collection 进行迭代的迭代器。迭代器取代了 Enumeratio
@@ -3724,7 +3718,7 @@ public class Cat {
 | E next()          | 返回迭代的下一个元素。                                     |
 | void remove()     | 从迭代器指向的 collection 中移除迭代器返回的最后一个元素。 |
 
-##### ListIterator 接口
+##### 11.4.2 ListIterator 接口
 
 - 定义：public interface **ListIterator**<E> extends Iterator<E>
 - 系列表迭代器，允许程序员按任一方向遍历列表、迭代期间修改列表，并获得迭代器在列表中的当前位置
@@ -3738,7 +3732,7 @@ public class Cat {
 | int previousIndex()   | 前一个索引位置       |
 | int nextIndex()       | 下一个索引位置       |
 
-##### Enumeration 接口
+##### 11.4.3 Enumeration 接口
 
 - public interface **Enumeration<E>**
 
@@ -3750,7 +3744,7 @@ public class Cat {
 | boolean hasMoreElements() | 判断是否有下一个元素 |
 | E nextElement()           | 取出当前元素         |
 
-##### forEach 方法
+##### 11.4.4 forEach 方法
 
 - 在使用 forEach 输出的时候 **一定要注意创建集合时要指定操作泛型的类型**。
 
@@ -3809,7 +3803,7 @@ public class IteratorDemo {
 
 
 
-#### 一些使用 lambda 表达式的常见接口 (jdk1.8)
+#### 11.5 一些使用 lambda 表达式的常见接口 (jdk1.8)
 
 ```java
 // ====== **定义** 一些使用 Lambda 表达式的常见接口的 (jdk1.8特性) ======
@@ -3891,7 +3885,7 @@ public class IteratorDemo {
 }
 ```
 
-#### Stream 接口 (jdk1.8)
+#### 11.6 Stream 接口 (jdk1.8)
 
 - 不是存储数据结构，数据源可以是一个集合，为了函数式编程创造 
 - **惰式执行，数据只能被消费一次**
@@ -3948,7 +3942,7 @@ public class StreamDemo {
 }
 ```
 
-#### Map 接口
+#### 11.7 Map 接口
 
 - 定义：public interface **Map**<K, V>
 - 键值对存储一组对象，**Key不能重复（唯一），Value可以重复**
@@ -3968,7 +3962,7 @@ public class StreamDemo {
 | void putAll(Map<? extends K,?   extends V> m) | 增加一组集合                    |
 | V remove(Object key)                          | 根据key删除内容                 |
 
-##### HashMap
+##### 11.7.1 HashMap
 
 - public class **HashMap**<K, V> extends AbstractMap<K, V>  implements Map<K,V>, Cloneable, Serializable
 
@@ -3982,7 +3976,7 @@ public class StreamDemo {
 
  * **线程不安全，适合在单线程中使用**
 
-##### Hashtable
+##### 11.7.2 Hashtable
 
 - public class **Hashtable**<K, V> extends Dictionary<K, V> implements Map<K,V>, Cloneable, Serializable
 
@@ -3991,13 +3985,13 @@ public class StreamDemo {
 - **扩充方式：**原数组大小 <<1 (*2) +1
 - **线程安全的，用在多线程访问时**
 
-##### LinkedHashMap
+##### 11.7.3 LinkedHashMap
 
 - public class **LinkedHashMap**<K, V> extends HashMap<K, V> implements Map<K, V>
 
 - LinkedHashMap 是 HashMap 的子类，由于 HashMap 不能保正顺序恒久不变，此类使用一个双重链表来维护元素添加的顺序。
 
-##### TreeMap
+##### 11.7.4 TreeMap
 
 - public class **TreeMap**<K, V> extends AbstractMap<K, V> implements NavigableMap<K, V>, Cloneable, Serializable
 
@@ -4098,7 +4092,7 @@ public class Dog implements Comparable<Dog>{
 }
 ```
 
-##### Map 接口的新方法 (jdk1.8)
+##### 11.7.5 Map 接口的新方法 (jdk1.8)
 
 ```java
 // ====== Map 接口的新方法 (jdk1.8) ======
@@ -4130,7 +4124,7 @@ public class MapNewMethodDemo {
 }
 ```
 
-#### Collections 类
+#### 11.8 Collections 类
 
 - Collections工具类提供了大量针对Collection/Map的操作，总体可分为四类，都为静态（static）方法。
 
@@ -4182,7 +4176,7 @@ public class MapNewMethodDemo {
 
    - Comparator<T> **reverseOrder**(Comparator<T> cmp) ：返回一个比较器，它强行反转指定比较器的顺序。如果指定比较器为 null，则此方法等同于 reverseOrder()（换句话说，它返回一个比较器，该比较器将强行反转实现 Comparable 接口那些对象 collection 上的自然顺序）
 
-#### Optional 容器类（jdk1.8）
+#### 11.9 Optional 容器类（jdk1.8）
 
 这是一个可以为 null 的容器对象，如果值存在则 isPresent() 方法会返回 true，调用 get() 方法会返回该对象
 
@@ -4279,7 +4273,7 @@ public class OptionalDemo {
 }
 ```
 
-#### Queue，Deque 接口，Stack类
+#### 11.10 Queue，Deque 接口，Stack类
 
 ```java
 import java.util.Deque;
@@ -4324,7 +4318,7 @@ public class QueueDequeDemo {
 }
 ```
 
-#### 迭代器设计模式
+#### 11.11 迭代器设计模式
 
 - **迭代器角色（Iterator）: **定义遍历元素所需要的方法，一般来说会有这么三个方法：取得下一个元素的方法next()，判断是否遍历结束的方法 hasNext()），移出当前对象的方法 remove(),
 
@@ -4402,7 +4396,7 @@ public class Test {
 }
 ```
 
-#### guava
+#### 11.12 guava
 
 - Guava工程包含了若干被Google的 Java项目广泛依赖 的核心库，例如：集合 [collections] 、缓存 [caching] 、原生类型支持 [primitives support] 、并发库 [concurrency libraries] 、通用注解 [common annotations] 、字符串处理 [string processing] 、I/O 等等。 所有这些工具每天都在被Google的工程师应用在产品服务中。
 - Guava对JDK集合的扩展，这是 Guava 最成熟和为人所知的部分。
@@ -4553,9 +4547,9 @@ public class GuavaDemo {
 }
 ```
 
-### 线程
+### 12 线程
 
-#### 进程
+#### 12.1 进程
 
 - **程序** 是 **指令和数据的有序集合，其本身没有任何运行的含义**，是一个 **静态** 的概念。
 
@@ -4569,7 +4563,7 @@ public class GuavaDemo {
 
 ![](https://upload-images.jianshu.io/upload_images/5097954-abe1947f811fc9ae.png)
 
-#### 线程
+#### 12.2 线程
 
 - 线程实际上是在进程基础之上的进一步划分，一个进程启动之后，里面的若干程序又可以划分成若干个线程。
 
@@ -4581,7 +4575,7 @@ public class GuavaDemo {
 
   - 并发：是指两个任务同时请求运行，而处理器一次只能接受一个任务，就会把两个任务安排轮流执行，由于CPU时间片运行时间较短,就会感觉两个任务在同时执行
 
-#### 实现线程的两种方式
+#### 12.3 实现线程的两种方式
 
 ```java
 public class ThreadDemo1 {
@@ -4626,7 +4620,7 @@ class MyRunnable implements Runnable {
 }
 ```
 
-##### Thread 类
+##### 12.3.1 Thread 类
 
 - **public void start()：**此线程开始执行，Java虚拟机会调用此线程的 run 方法。
 
@@ -4672,7 +4666,7 @@ class MyRunnable implements Runnable {
    * sleep：让线程进入休眠状态，让出CPU的时间片，不释放对象监视器的所有权（对象锁）
    * wait：让线程进入等待状态，让出CPU的时间片，并释放对象监视器的所有权，等待其它线程通过notify方法来唤醒
 
-#### 中断线程的方法
+#### 12.4 中断线程的方法
 
 ```java
 // ====== 方式一 使用 interrupt 方法来中断线程，设置一个中断状态（标记） ======
@@ -4718,9 +4712,9 @@ class MyRunable3 implements Runnable{
 
 ![](https://upload-images.jianshu.io/upload_images/5097954-e640555d308cfd2a.png)
 
-#### 线程同步
+#### 12.5 线程同步
 
-##### 线程同步准则
+##### 12.5.1 线程同步准则
 
 - 使代码块保持简短。把不随线程变化的预处理和后处理移出synchronized 块。
 
@@ -4791,7 +4785,7 @@ class MyRunnable5 implements Runnable {
 }
 ```
 
-#### 线程池
+#### 12.6 线程池
 
 ```java
 // ====== 创建线程池(4种) ======
@@ -4837,9 +4831,9 @@ class MyRunable6 implements Runnable{
 }
 ```
 
-### 网络编程
+### 13 网络编程
 
-#### 程序开发结构
+#### 13.1 程序开发结构
 
 - **C/S（客户端/服务器）**
 
@@ -4853,7 +4847,7 @@ class MyRunable6 implements Runnable{
   - BS 程序一般稳定性较差，而且安全性较差。
   - 但是 C/S 的程序开发在实际的 Java 应用中毕竟很少了，而且整个 java 基本上都是以 B/S 为主。
 
-#### TCP程序
+#### 13.2 TCP程序
 
 - **TCP连接** 是一个 **可靠的** 协议，**面向连接** 的协议。
 
@@ -4924,7 +4918,7 @@ public class EchoClientDemo {
 }
 ```
 
-#### 服务器与多客户端通信
+#### 13.3 服务器与多客户端通信
 
 ```java
 // ====== ServerSocket 服务端 ======
@@ -5003,7 +4997,7 @@ public class MutilClientDemo {
 }
 ```
 
-#### 多客户端之间的通信
+#### 13.4 多客户端之间的通信
 
 ```java
 // ====== 服务端 ======
@@ -5190,7 +5184,7 @@ public final class MessageType {
 }
 ```
 
-#### UDP 程序
+#### 13.5 UDP 程序
 
 - **UDP协议** 是一种 **不可靠的**、 **无连接** 的协议。
 - **DatagramPacket：**此类表示数据报包。
@@ -5245,7 +5239,7 @@ public class UDPClientDemo {
 }
 ```
 
-#### URL 类
+#### 13.6 URL 类
 
 - URL 代表一个统一资源定位符，它是指向互联网“资源”的指针。
 - 抽象类 **URLConnection**  是所有类的超类，它代表应用程序和 URL  之间的通信链接。
@@ -5282,7 +5276,7 @@ public class URLDemo {
 }
 ```
 
-#### MINA 框架
+#### 13.7 MINA 框架
 
 - 一个简洁易用的基于 TCP/IP 通信的 JAVA 框架。
 
@@ -5441,7 +5435,7 @@ public class Message implements Serializable {
 }
 ```
 
-### 反射与内省
+### 14 反射与内省
 
 - **Class 类是一切的反射根源**。
 - 得到 Class 类的对象有三种方式：
@@ -5555,7 +5549,7 @@ public class ReflectionDemo {
 }
 ```
 
-#### 动态代理
+#### 14.1 动态代理
 
 ```java
 // ====== 用于动态生成一个代理对象 ======
@@ -5618,7 +5612,7 @@ public clss Person implements Subject, Hotel {
 }
 ```
 
-#### 类什么时候被初始化
+#### 14.2 类什么时候被初始化
 
 1. 创建类的实例，也就是new一个对象
 2. 访问某个类或接口的静态变量，或者对该静态变量赋值
@@ -5627,12 +5621,12 @@ public clss Person implements Subject, Hotel {
 5. 初始化一个类的子类（会首先初始化子类的父类）
 6. JVM启动时标明的启动类，即文件名和类名相同的那个类
 
-#### JavaBean
+#### 14.3 JavaBean
 
 - Bean 为组件意思， JavaBean就是 Java 组件，也是一个类。
 - 对于组件来说，关键在于要具有“能够被IDE构建工具侦测其属性和事件”的能力，通常在 Java 中。
 
-##### JavaBean要具备这样的命名规则：
+##### 14.3.1 JavaBean要具备这样的命名规则：
 
 1. 对于一个名称为 xxx 的属性，通常你要写两个方法：getXxx() 和 setXxx()，任何浏览这些方法的工具，都会把get 或 set 后面的第一个字母自动转换为小写。
 2. 对于布尔型属性，可以使用以上 get 和 set 的方式，不过也可以把 get 替换成 is。
@@ -5676,7 +5670,7 @@ public class Emp {
 }
 ```
 
-#### Introspector 内省
+#### 14.4 Introspector 内省
 
 - 是 Java 语言对 Bean 类属性、事件的一种缺省处理方法。例如类 A 中有属性 name，那我们可以通过 getName，setName 来得到其值或者设置新的值，这也是默认的规则。
 
@@ -5779,7 +5773,7 @@ bean.password=123
 bean.url=http://www.163.com
 ```
 
-#### 可配置AOP框架的简单实现
+#### 14.5 可配置AOP框架的简单实现
 
 - 面向切面编程
 - 主要用于 权限、缓存、错误处理、调试、记录跟踪、持久化、同步、事务等。
@@ -5919,11 +5913,11 @@ bean.advice=com.vince.aop.LogAdvice
 bean=com.vince.aop.ProxyFactoryBean
 ```
 
-### 泛型
+### 15 泛型
 
 - 泛型，即 “ **参数化类型** ”，是将类型由原来的具体的类型参数化，类似于方法中的变量参数，此时类型也定义成参数形式（可以称之为类型形参），然后在使用/调用时传入具体的类型（类型实参），即类中的属性的类型可以由外部决定。
 
-#### 泛型类 / 泛型接口
+#### 15.1 泛型类 / 泛型接口
 
 T : 参数化类型，在实际使用时才会指定具体的类型，泛型只作用于编译期检查，在编译后，会被檫除
 
@@ -5957,7 +5951,7 @@ public interface Function<T, R> {
 }
 ```
 
-#### ? 通配符
+#### 15.2 ? 通配符
 
 - 使用通配符定义泛型类型，此时只能输出，不能修改。
 
@@ -5967,7 +5961,7 @@ public static void getData(Node<?> data) {
 }
 ```
 
-#### 泛型的上限与下限
+#### 15.3 泛型的上限与下限
 
 ```java
 public static void getUpperNumberData(Node<? extends Number> data){ // 只能是 Number 类及其子类
@@ -5978,7 +5972,7 @@ public static void getUpperNumberData(Node<? super Number> data){ // 只能是 N
 }
 ```
 
-#### 泛型方法
+#### 15.4 泛型方法
 
 ```java
 // ====== 泛型方法 ======
@@ -5990,15 +5984,15 @@ public static <T> T[] func(T[] array, int i, int t){
 }
 ```
 
-#### 泛型嵌套使用
+#### 15.5 泛型嵌套使用
 
 ```java
 Set<Entry<Integer, String>> entrys = map.entrySet();
 ```
 
-### 正则表达式
+### 16 正则表达式
 
-#### Matcher 类，Pattern 类
+#### 16.1 Matcher 类，Pattern 类
 
 ```java
 // ====== 正则表达式 ======
@@ -6024,14 +6018,14 @@ public class RegexDemo {
 }
 ```
 
-### 枚举
+### 17 枚举
 
 - jdk 1.5 之后
 
 - 使用 enum 关键字定义的枚举类，实际上就相当于定义了一个类，此类继承了 Enum 类而已。
 - 在 jdk 1.5 之后，对于 Set 和 Map 接口而言又增加了EnumSet、EnumMap 两个子类。
 
-#### 一般定义
+#### 17.1 一般定义
 
 ```java
 public enum Color {
@@ -6042,7 +6036,7 @@ public enum Color {
 Color c = Color.RED;
 ```
 
-#### 带构造方法的枚举
+#### 17.2 带构造方法的枚举
 
 ```java
 public enum Color {
@@ -6056,7 +6050,7 @@ public enum Color {
 }
 ```
 
-#### 实现接口的枚举
+#### 17.3 实现接口的枚举
 
 ```java
 // ====== Info 接口 ======
@@ -6092,7 +6086,7 @@ public enum Color implements Info{
 }
 ```
 
-#### 枚举类型及其成员的操作方法
+#### 17.4 枚举类型及其成员的操作方法
 
 ```java
 public enum Color {
@@ -6112,12 +6106,12 @@ System.out.println(Color.RED.ordinal()); // 0
 System.out.println(Color.BLUE.ordinal()); // 1
 ```
 
-### 注解
+### 18 注解
 
 - jdk1.5 开始，Java增加了对元数据（即类的组成单元数据）的支持，也就是（Annotation）注解，它是代码里做的特殊标记，这些标记可以在编译，类加载，运行时在不改变原有逻辑的情况下，被读取，并执行相应的处理，通过使用Annotation，程序员可以在源文件中嵌入一些补充的信息。代码分析工具，开发工具和部署工具可以通过这些补充信息进行验证或者进行部署。Annotation类似于修饰符一样被使用，可以用于包，类，构造方法，方法，成员变量，参数，局部变量的声明。
 - Annotation是一个接口。
 
-#### 系统提供的 @Override、@Deprecated、@SuppressWarnings 三个注解
+#### 18.1 系统提供的 @Override、@Deprecated、@SuppressWarnings 三个注解
 
 - **@Override**
 
@@ -6149,11 +6143,11 @@ System.out.println(Color.BLUE.ordinal()); // 1
 
   - @SuppressWarnings("all")  // 全部类型的警告 
 
-#### 自定义注解
+#### 18.2 自定义注解
 
 - 格式：访问控制权限 @interface  Annotation 名称 { }
 
-##### @Retention
+##### 18.2.1 @Retention
 
 - 确定注解的作用范围，而 Retention 指定的范围由 RetentiontPolicy 决定。
 
@@ -6163,11 +6157,11 @@ System.out.println(Color.BLUE.ordinal()); // 1
 | public static final RetentionPolicy   CLASS   | 在java生成的class中存在 |
 | public static final RetentionPolicy   RUNTIME | 在java运行的时候存在    |
 
-##### @Documented
+##### 18.2.2 @Documented
 
 - 用于生成文档，表示可以添加注释。
 
-##### @Target
+##### 18.2.3 @Target
 
 - 表示的是一个Annotation的使用范围
 
@@ -6182,7 +6176,7 @@ System.out.println(Color.BLUE.ordinal()); // 1
 | public static final ElementType   ANNOTATION_TYPE | 只能在Annotation中使用     |
 | public static final ElementType   PACKAGE         | 只能在包中使用             |
 
-##### @Inherited
+##### 18.2.4 @Inherited
 
 - 表示注解能否被其子类继承。
 
@@ -6271,9 +6265,9 @@ public class AnnotationDemo {
 }
 ```
 
-### XML 与 JSON
+### 19 XML 与 JSON
 
-#### SAX 解析 XML
+#### 19.1 SAX 解析 XML
 
 - SAX 是读取和操作 XML 数据更快速、更轻量的方法。
 - SAX 允许您在读取文档时处理它，从而不必等待整个文档被存储之后才采取操作，它不涉及 DOM 所必需的开销和概念跳跃。
@@ -6413,7 +6407,7 @@ public class PersonHandler extends DefaultHandler{
 </people>
 ```
 
-#### DOM 解析 XML
+#### 19.2 DOM 解析 XML
 
 - Document Object Model（文档对象模型）
 - 定义一组 Java 接口，基于对象，与语言和平台无关将 XML 文档表示为树，在内存中解析和存储 XML 文档，允许随机访问文档的不同部分。
@@ -6484,7 +6478,7 @@ public class XMLDemo {
 }
 ```
 
-#### JDOM 解析 XML
+#### 19.3 JDOM 解析 XML
 
 - 简化了与 XML 的交互并且比使用 DOM 实现更快
 - JDOM 仅使用具体类而不使用接口。这在某些方面简化了 API，但是也限制了灵活性。
@@ -6548,7 +6542,7 @@ public class XMLDemo {
 }
 ```
 
-#### DOM4J 解析 XML
+#### 19.4 DOM4J 解析 XML
 
 - dom4j 是一个非常非常优秀的 Java XML API，具有性能优异、功能强大和极端易用使用的特点，同时它也是一个开放源代码的软件，可以在SourceForge上找到它。
 - 在对主流的 Java XML API 进行的性能、功能和易用性的评测，dom4j 无论在那个方面都是非常出色的。
@@ -6610,7 +6604,51 @@ public class XMLDemo {
 }
 ```
 
-#### 使用第三方 xstream 组件解析与生成 XML
+##### 19.4.1 使用 XPath 配合 DOM4J 解析 XML
+
+- XPath 是在 XML 文档中查找信息的语言 ，通过元素和属性进行查找，简化了 Dom4j 查找节点的过程。
+- 导入 jar 包。
+  - jaxen-1.1-beta-6.jar
+
+- 主要方法：
+  - selectNodes(String xpathExpression) ：获取所有符合条件的节点，返回 List 集合。
+  - selectSingleNode(String xpathExpression) ：获取符合条件的单个节点，返回一个 Node 对象，如果符合条件的节点有多个，那么返回第一个。
+
+```java
+import java.util.List;
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+public class Demo {
+	public static void main(String[] args) {
+		SAXReader reader = new SAXReader();
+		try {
+			Document doc = reader.read(Demo.class.getResourceAsStream("/Book.xml"));
+			// 根据 xpath 路径获取指定的节点
+			List<Element> eles = doc.selectNodes("/root/books/book/auther/name");
+			for (Element element : eles) {
+				System.out.println(element.getText());
+			}
+			// 找所有标签名时 name 的节点，不管层次关系
+			List<Element> eles2 = doc.selectNodes("//name");
+			for (Element element : eles2) {
+				System.out.println(element.getText());
+			}
+			// 根据子元素的文本内容获取父元素对象
+			// Element ele = (Element) doc.selectSingleNode("/root/books/book[name='乔布斯传']");
+			// 根据节点属性值获取对象
+			Element ele = (Element) doc.selectSingleNode("/root/books/book[@id=2]");
+			// 获取节点的xml格式的字符串
+			System.out.println(ele.asXML());
+		} catch (DocumentException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+#### 19.5 使用第三方 xstream 组件解析与生成 XML
 
 ```java
 // ====== 使用第三方 xstream 组件解析与生成 XML ======
@@ -6673,15 +6711,15 @@ public class XMLDemo {
 }
 ```
 
-#### XML 解析方法比较
+#### 19.6 XML 解析方法比较
 
 - JDOM 和 DOM 在性能测试时表现不佳，在测试 10M 文档时内存溢出。
 - SAX表现较好，这要依赖于它特定的解析方式，一个 SAX 检测即将到来的XML流，但并没有载入到内存（当然当XML流被读入时，会有部分文档暂时隐藏在内存中）。
 - **DOM4J 是这场测试的获胜者**，目前许多开源项目中大量采用 DOM4J，例如大名鼎鼎的 Hibernate 也用 DOM4J 来读取 XML 配置文件。
 
-#### GSON 解析 JSON
+#### 19.7 GSON 解析 JSON
 
-##### 使用 JsonReader
+##### 19.7.1 使用 JsonReader
 
 ```java
 // ====== 使用 JsonReader 解析复杂的 JSON 数据 ======
@@ -6805,7 +6843,9 @@ public class JsonDemo2 {
 ]
 ```
 
-##### 使用Gson
+##### 19.7.2 使用 Gson
+
+Gson 是谷歌提供的。
 
 ```java
 // ====== 使用 Gson ======
@@ -6888,6 +6928,200 @@ public class JsonDemo3 {
     "email": "jason@google.com"
   }
 ]
+```
+
+##### 19.3 使用 fastjson (推荐)
+
+- fastjson 是 alibaba 提供的第三方组件，用来处理 json 格式数据。
+
+-  导入 jar 包
+  - fastjson-1.2.2.jar
+
+```java
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import org.junit.Test;
+import com.alibaba.fastjson.JSON;
+import com.alibaba.fastjson.TypeReference;
+import com.alibaba.fastjson.serializer.SerializerFeature;
+public class FastJsonTest {
+	@Test
+	// 对象转为 json 格式的字符串
+	public void bean2Json(){
+		Student s = new Student(2, "zhagnsan", 39);
+		String json = JSON.toJSONString(s);
+		System.out.println(json); // {"age":39,"id":2,"name":"zhagnsan"}
+	}
+	@Test
+	// 数组转为 json 格式的字符串
+	public void list2Json(){
+		List<Student> l = new ArrayList<>();
+		Student s = new Student(2, "zhagnsan", 39);
+		Student s1 = new Student(4, "zhagnsan4", 39);
+		l.add(s);
+		l.add(s1);
+		String json = JSON.toJSONString(l);
+		// [{"age":39,"id":2,"name":"zhagnsan"},{"age":39,"id":4,"name":"zhagnsan4"}]
+		System.out.println(json);
+	}
+	@Test
+	// json 格式字符串转为对象
+	public void json2bean(){
+		String json = "{\"name\":\"lisi\", \"age\":30,\"id\":5}";
+		Student stu = JSON.parseObject(json, Student.class);
+		System.out.println(stu.getName());
+	}
+	@Test
+	// json格式字符串转为数组
+	public void json2list(){
+		String json = "[{\"name\":\"lisi\", \"age\":30,\"id\":5}]";
+		// List<Student> list = JSON.parseArray(json, Student.class);
+		// 这种方式更通用
+		List<Student> list = JSON.parseObject(json, new TypeReference<List<Student>>(){});
+		System.out.println(list.get(0).getName());
+	}
+	@Test
+	// json 中的日期转换
+	public void dateInfo(){
+		Person p = new Person();
+		p.setAge(30);
+		p.setName("haha");
+		p.setBirth(new Date());
+		// 日期对象默认转为时间戳
+		System.out.println(JSON.toJSONString(p));
+		// 日期转为 yyyy-MM-dd HH:mm:ss
+		System.out.println(JSON.toJSONString(p, SerializerFeature.WriteDateUseDateFormat));
+		// 自定义转换格式
+		System.out.println(JSON.toJSONStringWithDateFormat(p, "yyyy-MM-dd" , SerializerFeature.WriteDateUseDateFormat));
+	}
+}
+```
+
+##### 19.4 使用 jackson
+
+- 导入 jar 包
+  - jackson-annotations-2.8.1.jar
+  - jackson-core-2.8.2.jar
+  - jackson-databind-2.8.2.jar
+
+```java
+import java.io.IOException;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import org.junit.Test;
+import com.fasterxml.jackson.core.JsonParseException;
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.core.type.TypeReference;
+import com.fasterxml.jackson.databind.JsonMappingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
+public class JacksonTest {
+	@Test
+	// 对象转为 json 格式的字符串
+	public void bean2Json() throws Exception{
+		Student s = new Student(2, "zhagnsan", 39);
+		ObjectMapper mapper = new ObjectMapper();
+		String json = mapper.writeValueAsString(s);
+		System.out.println(json);
+	}
+	@Test
+	// 数组转为 json 格式的字符串
+	public void list2Json() throws Exception{
+		List<Student> l = new ArrayList<>();
+		Student s = new Student(2, "zhagnsan", 39);
+		Student s1 = new Student(4, "zhagnsan4", 39);
+		l.add(s);
+		l.add(s1);
+		ObjectMapper mapper = new ObjectMapper();
+		String json = mapper.writeValueAsString(l);
+		System.out.println(json);
+	}
+	@Test
+	// json 格式字符串转为对象
+	public void json2bean() throws Exception{
+		String json = "{\"name\":\"lisi\", \"age\":30,\"id\":5}";
+		ObjectMapper mapper =  new ObjectMapper();
+		Student stu = mapper.readValue(json, Student.class);
+		System.out.println(stu.getName());
+	}
+	@Test
+	// json格式字符串转为数组
+	public void json2list() throws Exception{
+		String json = "[{\"name\":\"lisi\", \"age\":30,\"id\":5}]";
+		ObjectMapper mapper = new ObjectMapper();
+		List<Student> list = mapper.readValue(json, new TypeReference<List<Student>>(){});
+		System.out.println(list.get(0).getName());
+	}
+	@Test
+	// json 中的日期转换
+	public void dateInfo() throws Exception{
+		Person p = new Person();
+		p.setAge(30);
+		p.setName("haha");
+		p.setBirth(new Date());
+		ObjectMapper mapper = new ObjectMapper();
+		// 日期对象默认转为时间戳
+		System.out.println(mapper.writeValueAsString(p));
+		// 自定义格式
+		mapper.setDateFormat(new SimpleDateFormat("yyyy-MM-dd HH:mm:ss"));
+		System.out.println(mapper.writeValueAsString(p));
+	}
+}
+```
+
+##### 19.5 使用 json-lib
+
+- json-lib 是第三方组件，可以将 Java 对象转成 json 格式的字符串，也可以将 Java 对象转换成 xml 格式的文档，同样可以将 json 字符串转换成 Java 对象或是将 xml 字符串转换成 Java 对象。
+- 导入 jar 包
+  - commons-beanutils-1.9.3.jar
+  - commons-collections-3.1.jar
+  - commons-lang-2.5.jar
+  - commons-logging-1.2.jar
+  - ezmorph-1.0.3.jar
+  - json-lib-2.1-jdk15.jar
+
+```java
+import java.util.ArrayList;
+import java.util.Date;
+import java.util.List;
+import org.junit.Test;
+import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+
+public class JsonlibTest {
+	@Test
+	// 对象转为 json 格式的字符串
+	public void bean2Json(){
+		Student s = new Student(2, "zhagnsan", 39);
+		String json = JSONObject.fromObject(s).toString();
+		System.out.println(json); // {"age":39,"id":2,"name":"zhagnsan"}
+	}
+	@Test
+	// 数组转为 json 格式的字符串
+	public void list2Json(){
+		List<Student> l = new ArrayList<>();
+		Student s = new Student(2, "zhagnsan", 39);
+		Student s1 = new Student(4, "zhagnsan4", 39);
+		l.add(s);
+		l.add(s1);
+		String json = JSONArray.fromObject(l).toString();
+		// [{"age":39,"id":2,"name":"zhagnsan"},{"age":39,"id":4,"name":"zhagnsan4"}]
+		System.out.println(json);
+	}
+	@Test
+	// json 中的日期转换
+	public void dateInfo(){
+		Person p = new Person();
+		p.setAge(30);
+		p.setName("haha");
+		p.setBirth(new Date());
+		// 日期对象默认转为分别包含年月日时分秒等信息的对象
+		System.out.println(JSONObject.fromObject(p).toString());
+		// {"name":"haha","birth":{"date":15,"hours":11,"seconds":12,"month":10,"timezoneOffset":-480,"year":118,"minutes":33,"time":1542252792225,"day":4},"age":30}
+	}
+}
 ```
 
 

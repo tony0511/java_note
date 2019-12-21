@@ -13,10 +13,10 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class SafeServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-	
+
 	// 记录当前是第几位访问者
 	private int count = 1;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -29,24 +29,17 @@ public class SafeServlet extends HttpServlet {
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-		
 		response.setContentType("text/html;charset=utf-8");
 		synchronized (SafeServlet.class) {
-			// PrintWriter
+			// === 单例 ===
 			response.getWriter().write("您是第" + count + "位访问者");
-			
 			try {
 				Thread.sleep(5000);
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
 			count++;
 		}
-		
-		
 	}
 
 	/**

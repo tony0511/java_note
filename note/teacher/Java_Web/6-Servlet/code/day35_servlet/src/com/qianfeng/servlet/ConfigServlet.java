@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ConfigServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -27,17 +27,17 @@ public class ConfigServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
-		// 获取ServletConfig对象
-		// 每个servelt对应一个ServletConfig对象
+
+		// 获取 ServletConfig 对象
+		// 每个 Servelt 对应一个 ServletConfig 对象
 		ServletConfig servletConfig = this.getServletConfig();
-		// 读取web.xml中servlet的init-param的配置
+		// 读取 web.xml中servlet 的 init-param 的配置
 		String encoding = servletConfig.getInitParameter("encoding");
 		String name = servletConfig.getInitParameter("username");
-		
+
 		System.out.println(encoding);
 		System.out.println(name);
-	
+
 	}
 
 	/**

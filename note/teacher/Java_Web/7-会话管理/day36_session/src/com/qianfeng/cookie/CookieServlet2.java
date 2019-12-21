@@ -14,7 +14,7 @@ import javax.servlet.http.HttpServletResponse;
 @WebServlet("/CookieServlet2")
 public class CookieServlet2 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -28,15 +28,17 @@ public class CookieServlet2 extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		
+
 		// 获取针对本应用的所有cookie
 		Cookie[] cookies = request.getCookies();
 		for (Cookie cookie : cookies) {
 			System.out.println(cookie.getName());
 			System.out.println(cookie.getValue());
-			
+      System.out.println(cookie.getPath());
+      System.out.println(cookie.getDomain());
+      System.out.println(cookie.getMaxAge());
 		}
-	
+
 	}
 
 	/**

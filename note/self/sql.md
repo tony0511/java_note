@@ -4,7 +4,7 @@
 
 [TOC]
 
-#### 第一章 数据库简介
+#### 1 数据库简介
 
 ##### 1.1 简介
 
@@ -171,7 +171,7 @@
 
 
 
-#### 第二章 SQL语言
+#### 2 SQL语言
 
 ##### 2.1 概述
 
@@ -493,21 +493,18 @@ DELETE FROM 表名 [WHERE 列名=值]
 
 ```sql
 DELETE FROM emp WHERE name=‘zhangsan’;
-
 ```
 
 删除表中 **所有** 记录。
 
 ```sql
 DELETE FROM emp;
-
 ```
 
 使用truncate删除表中记录。(**先把表删除，然后再创建空表**)
 
 ```sql
 TRUNCATE TABLE emp;
-
 ```
 
 **DELETE 与 TRUNCATE 的区别：**
@@ -516,7 +513,7 @@ TRUNCATE TABLE emp;
 - TRUNCATE 删除是把表直接 DROP 掉，然后再创建一个同样的新表。
 - TRUNCATE 删除的数据不能找回，执行速度比 DELETE 快。
 
-#### 第三章 DQL数据查询(重点)
+#### 3 DQL数据查询(重点)
 
 数据库执行DQL语句不会对数据进行改变，而是让数据库发送结果集给客户端。
 
@@ -534,7 +531,6 @@ SELECT     selection_list /*要查询的列名称*/
 	HAVING   condition /*分组后的行条件*/
 	ORDER BY sorting_columns /*对结果排序*/
 	LIMIT    offset_start, row_count /*结果限定*/
-
 ```
 
 **示例操作：**
@@ -561,7 +557,6 @@ INSERT INTO stu VALUES('S_1008', 'zhouBa', 45, 'female');
 INSERT INTO stu VALUES('S_1009', 'wuJiu', 85, 'male');
 INSERT INTO stu VALUES('S_1010', 'zhengShi', 5, 'female');
 INSERT INTO stu VALUES('S_1011', 'xxx', NULL, NULL);
-
 ```
 
 2. 创建雇员表并添加数据
@@ -593,7 +588,6 @@ INSERT INTO emp values(7876,'ADAMS','CLERK',7788,'1987-05-23',1100,NULL,20);
 INSERT INTO emp values(7900,'JAMES','CLERK',7698,'1981-12-03',950,NULL,30);
 INSERT INTO emp values(7902,'FORD','ANALYST',7566,'1981-12-03',3000,NULL,20);
 INSERT INTO emp values(7934,'MILLER','CLERK',7782,'1982-01-23',1300,NULL,10);
-
 ```
 
 3. 创建部门表并添加数据
@@ -610,7 +604,6 @@ INSERT INTO dept values(10, '财务部', 'beijing');
 INSERT INTO dept values(20, 'java开发部', 'tianjin');
 INSERT INTO dept values(30, '测试部', 'shanghai');
 INSERT INTO dept values(40, '销售部', 'shenzheng');
-
 ```
 
 ##### 3.1 简单查询
@@ -619,14 +612,12 @@ INSERT INTO dept values(40, '销售部', 'shenzheng');
 
 ```sql
 SELECT * FROM stu;
-
 ```
 
 查询指定列
 
 ```sql
 SELECT sid, sname, age FROM stu;
-
 ```
 
 ##### 3.2 条件查询
@@ -647,15 +638,37 @@ SELECT sid, sname, age FROM stu;
 
 \>=：大于等于
 
-BETWEEN … AND；
+BETWEEN … AND
 
-IN(set)；
+**谓词**
 
-IS NULL；  
+IN(set) 
+
+NOT IN(set)
+
+> in 表示是否在某个范围内，作用上等效于多个条件使用 or 连接。
+
+ANY **（需要个嵌套查询一起使用）**
+
+> 表示范围内的任意一个。
+
+ALL **（需要个嵌套查询一起使用）**
+
+>  表示范围内的所有。
+
+EXISTS  **（需要个嵌套查询一起使用）**
+
+> 表示子查询是否返回结果，只要有结果就为 true，否则为 false，而不管返回的结果具体是啥内容。
+>
+> **注：使用 exists 时，对外表的数据逐条查询，遍历每条数据时，都会查看 exists 后跟着的语句是否能够返回记录，只要能返回，条件就为真，当前查询的外表的这条记录就会返回，反之，当前查询的外表记录被丢弃。**
+
+**注：一般这些谓词可以使用别的方式替代，比如 > ALL(...) 可以用 > max(…) 替代。**
+
+IS NULL 
 
 **关系运算符**
 
-AND，OR，NOT；
+AND，OR，NOT
 
 **算术运算符:**
 
@@ -667,10 +680,9 @@ SELECT 3-2;
 SELECT 3*2;
 SELECT 3/2;
 SELECT 3%2;
-
 ```
 
-1. 查询性别为女，并且年龄小于50的记录
+1. 查询性别为女，并且年龄小于 50 的记录
 
    注：比较的值不区分大小写，即 female 与 Female 的查询结果是一样的，可以使用 binary 关键字来区分大小写。
 
@@ -678,87 +690,68 @@ SELECT 3%2;
 SELECT * FROM stu WHERE gender='Female' AND age<50;
 -- 区分大小写
 SELECT * FROM stu WHERE binary gender='Female' AND age<50;
-
 ```
 
-2. 查询学号为S_1001，或者姓名为liSi的记录
+2. 查询学号为 S_1001，或者姓名为 liSi 的记录
 
 ```sql
 SELECT * FROM stu WHERE sid ='S_1001' OR sname='liSi';
-
 ```
 
-3. 查询学号为S_1001，S_1002，S_1003的记录
+3. 查询学号为 S_1001，S_1002，S_1003 的记录
 
 ```sql
+-- IN 查询效率一般比较差
 SELECT * FROM stu WHERE sid IN ('S_1001','S_1002','S_1003');
 -- 等同于
 SELECT * FROM stu WHERE sid='S_1001' or sid='S_1002' or sid='S_1003';
-
 ```
 
 4. 查询学号不是S_1001，S_1002，S_1003的记录
 
 ```sql
 SELECT * FROM tab_student 
-WHERE sid NOT IN('S1001','S1002','S_1003');
-
+WHERE sid NOT IN ('S1001','S1002','S_1003');
 ```
 
-5. 查询年龄为null的记录
+5. 查询年龄为 null 的记录
 
 ```sql
 SELECT * FROM stu WHERE age IS NULL;
-
 ```
 
-6. 查询年龄在20到40之间的学生记录
+6. 查询年龄在 20 到 40 之间的学生记录
 
 ```sql
 SELECT * FROM stu WHERE age>=20 AND age<=40;
-
-```
-
-或者
-
-```sql
+-- 或者
 SELECT * FROM stu WHERE age BETWEEN 20 AND 40;
-
 ```
 
 7. 查询性别非男的学生记录
 
 ```sql
 SELECT * FROM stu WHERE gender!='male';
-
-```
-
-或者
-
-```sql
+-- 或者
 SELECT * FROM stu WHERE gender<>'male';
-
-```
-
-或者
-
-```sql
+-- 或者
 SELECT * FROM stu WHERE NOT gender='male';
-
 ```
 
 8. 查询姓名不为 null 的学生记录
 
 ```sql
 SELECT * FROM stu WHERE NOT sname IS NULL;
-
+-- 或者
+SELECT * FROM stu WHERE sname IS NOT NULL;
 ```
 
-或者
+9. ANY、ALL 和  EXISTS 查询
 
 ```sql
-SELECT * FROM stu WHERE sname IS NOT NULL;
-
+SELECT * FROM emp WHERE deptno > ANY (SELECT deptno FROM emp2 WHERE deptno>3);
+SELECT * FROM emp WHERE deptno > ALL (SELECT deptno FROM emp2 where deptno<6);
+SELECT * FROM emp WHERE EXISTS (SELECT deptno FROM emp2 where deptno>9);
 ```
 
 ##### 3.3 模糊查询
@@ -775,7 +768,6 @@ _ ：任意一个字符
 
 ```sql
 SELECT * FROM stu WHERE sname LIKE '___';
-
 ```
 
 模糊查询必须使用 LIKE 关键字。其中 “\_”匹配任意一个字母，5个“\_”表示5个任意字母。
@@ -784,14 +776,12 @@ SELECT * FROM stu WHERE sname LIKE '___';
 
 ```sql
 SELECT *  FROM stu WHERE sname LIKE '____i';
-
 ```
 
 3. 查询姓名以“z”开头的学生记录
 
 ```sql
 SELECT * FROM stu WHERE sname LIKE 'z%';
-
 ```
 
 其中“%”匹配0~n个任何字符。
@@ -800,14 +790,12 @@ SELECT * FROM stu WHERE sname LIKE 'z%';
 
 ```sql
 SELECT * FROM stu WHERE sname LIKE '_i%'; 
-
 ```
 
 5. 查询姓名中包含“a”字符的学生记录
 
 ```sql
 SELECT * FROM stu WHERE sname LIKE '%a%';
-
 ```
 
 ##### 3.4 字段控制查询
@@ -821,7 +809,6 @@ SELECT * FROM stu WHERE sname LIKE '%a%';
 SELECT DISTINCT sal FROM emp;
 -- 表示 sal，com 都相同的会去重
 SELECT DISTINCT sal, com FROM emp;
-
 ```
 
 2. 查看雇员的月薪与佣金之和
@@ -833,7 +820,6 @@ SELECT DISTINCT sal, com FROM emp;
 SELECT *,sal+comm FROM emp;
 -- 字符串的使用 concat(ename, '____', job) 来拼接
 select *,concat(ename,'______',job) from emp;
-
 ```
 
 comm 列有很多记录的值为 NULL，因为任何东西与 NULL 相加结果还是 NULL，所以结算结果可能会出现NULL。下面使用了把 NULL 转换成数值 0 的函数 **IFNULL**：
@@ -841,7 +827,6 @@ comm 列有很多记录的值为 NULL，因为任何东西与 NULL 相加结果�
 ```sql
 -- 如果为 null 时则用 0 进行相加
 SELECT *,sal+IFNULL(comm,0) FROMemp;
-
 ```
 
 3. 使用 **AS** 给列名添加 **别名**
@@ -851,8 +836,7 @@ SELECT *,sal+IFNULL(comm,0) FROMemp;
 ```sql
 SELECT *, sal+IFNULL(comm,0) AS total FROM emp;
 -- 其中 AS 关键字可以省略
-SELECT *,sal+IFNULL(comm,0)  total FROM emp;
-
+SELECT *,sal+IFNULL(comm,0) total FROM emp;
 ```
 
 ##### 3.5 排序 (ORDER BY)
@@ -862,28 +846,24 @@ SELECT *,sal+IFNULL(comm,0)  total FROM emp;
 ```sql
 -- ASC：升序，DESC：降序
 SELECT * FROM stu ORDER BY age ASC;
-
 ```
 
 或者
 
 ```sql
 SELECT * FROM stu ORDER BY age;
-
 ```
 
 2. 查询所有学生记录，按年龄降序排序
 
 ```sql
 SELECT * FROM stu ORDER BY age DESC;
-
 ```
 
 3. 查询所有雇员，按月薪降序排序，如果月薪相同时，按编号升序排序
 
 ```sql
 SELECT * FROM emp ORDER BY sal DESC,empno ASC; 
-
 ```
 
 ##### 3.6 聚合函数  
@@ -904,18 +884,16 @@ SELECT * FROM emp ORDER BY sal DESC,empno ASC;
 
 当需要纵向统计时可以使用 COUNT()。
 
-查询emp表中记录数：
+查询 emp 表中记录数：
 
 ```sql
 SELECT COUNT(*) AS cnt FROM emp;
-
 ```
 
-查询emp表中有佣金的人数：
+查询 emp 表中有佣金的人数：
 
 ```sql
 SELECT COUNT(comm) cnt FROM emp;
-
 ```
 
 注意，因为 count() 函数中给出的是 comm 列，那么只统计 comm 列非 NULL 的行数。
@@ -924,20 +902,18 @@ SELECT COUNT(comm) cnt FROM emp;
 
 ```sql
 SELECT COUNT(*) FROM emp WHERE sal > 2500;
-
 ```
 
 统计月薪与佣金之和大于 2500 元的人数：
 
 ```sql
-SELECT COUNT(*) AS cnt FROM empWHERE sal+IFNULL(comm,0) > 2500;
-
+SELECT COUNT(*) AS cnt FROM emp WHERE sal+IFNULL(comm,0) > 2500;
 ```
 
 查询有佣金的人数，以及有领导的人数：
 
 ```sql
-SELECT COUNT(comm), COUNT(mgr)FROM emp;
+SELECT COUNT(comm), COUNT(mgr) FROM emp;
 ```
 
 2. **SUM 和 AVG**
@@ -973,7 +949,7 @@ SELECT AVG(sal) FROM emp;
 查询最高工资和最低工资：
 
 ```sql
-SELECT MAX(sal), MIN(sal) FROMemp;
+SELECT MAX(sal), MIN(sal) FROM emp;
 ```
 
 ##### 3.7 分组查询
@@ -1008,7 +984,6 @@ SELECT deptno,COUNT(*) FROM emp WHERE sal>1500 GROUP BY deptno;
 
 ```sql
 SELECT deptno, SUM(sal) FROM emp GROUP BY deptno HAVING SUM(sal) > 9000;
-
 ```
 
 **注：having 与 where 的区别:**
@@ -1027,7 +1002,6 @@ LIMIT 用来限定查询结果的起始行，以及总行数。
 
 ```sql
 SELECT * FROM emp LIMIT 0, 5;
-
 ```
 
 注意，起始行从 0 开始，即第一行开始
@@ -1036,7 +1010,6 @@ SELECT * FROM emp LIMIT 0, 5;
 
 ```sql
 SELECT * FROM emp LIMIT 3, 10;
-
 ```
 
 **注：limit 一般用于分页查询**
@@ -1046,7 +1019,7 @@ SELECT * FROM emp LIMIT 3, 10;
 - 查询语句 **书写** 顺序：**select – from - where - group by - having - order by - limit**
 - 查询语句 **执行** 顺序：**from - where - group by - having - select - order by - limit**
 
-#### 第四章 客户端工具的使用
+##### 3.9 客户端工具的使用
 
 比如：**SQLyog** 和 **Navicat** 
 
@@ -1081,7 +1054,7 @@ alter user 'root'@'localhost' identified with mysql_native_password by '123456';
    - **F6**：打开一个 mysql 命令行窗口
    - **Ctrl + Q**：打开查询窗口
 
-#### 第五章 数据的完整性
+#### 4 数据的完整性
 
 **作用**：保证用户输入的数据保存到数据库中是正确的，确保数据的完整性 = 在创建表时给表中添加约束
 
@@ -1107,7 +1080,9 @@ alter user 'root'@'localhost' identified with mysql_native_password by '123456';
 
 ​	注：每个表中要有一个主键。
 
-​	特点：数据唯一，且不能为 null
+​	特点：1. 数据唯一，且不能为 null。
+
+​				2. 主键相当于：**非空 + 唯一**。
 
 示例：
 
@@ -1136,7 +1111,9 @@ ALTER TABLE student ADD PRIMARY KEY (id);
 
 ###### 4.1.2 唯一约束(unique)      
 
-特点：数据不能重复，可以为 null
+特点：1. 数据不能重复，可以为 null。
+
+​		   2. 字段设置为 unique，会自动建立唯一性索引。
 
 ```sql
 -- 方式一
@@ -1168,6 +1145,8 @@ ALTER TABLE student3 ADD UNIQUE (`name`);
 
 给主键添加自动增长的数值，列只能是整数类型
 
+**注：自增属性不单独设置，需要配合主键或唯一索引使用**
+
 ```sql
 -- 默认开始值是 1，每条新记录递增 1
 CREATE TABLE student(
@@ -1183,6 +1162,51 @@ CREATE TABLE student(
 ALTER TABLE student AUTO_INCREMENT=100;
 INSERT INTO student(name) values('tom'),('lily');
 ```
+
+###### 4.1.4 索引
+
+- 索引是一种快速查询表中内容的机制，使用索引可以提高查询效率，相当于字典的目录可以将查询过程中经常使用的条件设为索引。
+- 创建索引是一个优化问题，同样也是一个策略问题。
+
+**4.1.4.1 索引使用场景**
+
+- 表经常进行 SELECT 操作。
+- 表数据量很大，记录内容分布范围很广。
+- 列名经常在 WHERE 子句或连接条件中出现。
+
+**4.1.4.2 mysql 中索引的类型**
+
+- **普通索引**
+
+  这是最基本的索引类型，而且它没有唯一性之类的限制。普通索引可以通过以下几种方式创建：
+
+  - 创建索引，例如 CREATE INDEX <索引的名字> ON tablename (列的列表)。
+  - 修改表，例如 ALTER TABLE tablename ADD INDEX [索引的名字] (列的列表)。
+  - 创建表的时候指定索引，例如 CREATE TABLE tablename ( [...], INDEX [索引的名字] (列的列表) )。
+
+- **唯一索引**
+
+  唯一索引和普通索引基本相同，但有一个区别：索引列的所有值都只能出现一次，即必须唯一。唯一索引可以用以下几种方式创建：
+
+  - 创建索引，例如 CREATE UNIQUE INDEX <索引的名字> ON tablename (列的列表)。
+  - 修改表，例如 ALTER TABLE tablename ADD UNIQUE [索引的名字] (列的列表)。
+  - 创建表的时候指定索引，例如 CREATE TABLE tablename ( [...], UNIQUE [索引的名字] (列的列表) )。
+
+- **主键索引**
+
+  **主键索引 是一种 唯一索引**，也可称为聚集索引，但它必须指定为 “PRIMARY KEY”。主键一般在创建表的时候指定，例如“CREATE TABLE tablename ( [...], PRIMARY KEY (列的列表) ); ”。但是，我们也可以通过修改表的方式加入主键，例如“ALTER TABLE tablename ADD PRIMARY KEY (列的列表); ”
+
+- **全文索引 (很少用)**
+
+  全文索引(全文检索)能够利用分词技术等多种算法，按照一定的算法规则智能地筛选出我们想要的搜索结果。MySQL 从 3.23.23 版开始支持全文索引和全文检索。在 MySQL 中，全文索引的索引类型为 FULLTEXT。全文索引可以在 VARCHAR 或者 TEXT 类型的列上创建。它可以通过 CREATE TABLE 命令创建，也可以通过 ALTER TABLE 或 CREATE INDEX 命令创建。对于大规模的数据集，通过 ALTER TABLE（或者 CREATE INDEX）命令创建全文索引要比把记录插入带有全文索引的空表。
+
+  *注：MySQL 自带的全文索引只能用于数据库引擎为 MyISAM 的数据表，如果是其他数据引擎，则全文索引不会生效。*
+
+**4.1.4.3 索引的缺点**
+
+- 索引要占用磁盘空间。通常情况下，这个问题不是很突出，但是，如果你创建每一种可能列组合的索引，索引文件体积的增长速度将远远超过数据文件。如果你有一个很大的表，索引文件的大小可能达到操作系统允许的最大文件限制。
+
+- 对于需要写入数据的操作，比如 DELETE、UPDATE 以及 INSERT 操作，索引会降低它们的速度，这是因为 MySQL 不仅要把改动数据写入数据文件，而且它还要把这些改动写入索引文件。
 
 ##### 4.2 域完整性
 
@@ -1248,13 +1272,18 @@ TIMESTAMP类型有专有的自动更新特性
 | LONGBLOB                        | 0-4 294 967 295字节 | 二进制形式的极大文本数据          |
 | LONGTEXT                        | 0-4 294 967 295字节 | 极大文本数据                      |
 
-CHAR 和 VARCHAR 类型类似，但它们保存和检索的方式不同。它们的最大长度和是否尾部空格被保留等方面也不同。在存储或检索过程中不进行大小写转换。
+- CHAR 和 VARCHAR 类型类似，但它们保存和检索的方式不同。它们的最大长度和是否尾部空格被保留等方面也不同。在存储或检索过程中不进行大小写转换。
 
-BINARY 和 VARBINARY 类似于 CHAR 和 VARCHAR，不同的是它们包含二进制字符串而不要非二进制字符串。也就是说，它们包含字节字符串而不是字符字符串。这说明它们没有字符集，并且排序和比较基于列值字节的数值值。
+- BINARY 和 VARBINARY 类似于 CHAR 和 VARCHAR，不同的是它们包含二进制字符串而不要非二进制字符串。也就是说，它们包含字节字符串而不是字符字符串。这说明它们没有字符集，并且排序和比较基于列值字节的数值值。
 
-BLOB 是一个二进制大对象，可以容纳可变数量的数据。有 4 种 BLOB 类型：TINYBLOB、BLOB、MEDIUMBLOB 和 LONGBLOB。它们只是可容纳值的最大长度不同。
+- **Oracle：varchar 和 varchar2 的区别**
+  - varchar2 把所有字符都占两字节处理(一般情况下)，varchar 只对汉字和全角等字符占两字节，数字，英文字符等都是一个字节。
+  - varchar2 把空串等同于 null 处理，而 varchar 仍按照空串处理。
+  - varchar2 字符要用几个字节存储，要看数据库使用的字符集。
 
-有 4 种 TEXT 类型：TINYTEXT、TEXT、MEDIUMTEXT 和 LONGTEXT。这些对应 4 种 BLOB 类型，有相同的最大长度和存储需求。
+- BLOB 是一个二进制大对象，可以容纳可变数量的数据。有 4 种 BLOB 类型：TINYBLOB、BLOB、MEDIUMBLOB 和 LONGBLOB。它们只是可容纳值的最大长度不同。
+
+- 有 4 种 TEXT 类型：TINYTEXT、TEXT、MEDIUMTEXT 和 LONGTEXT。这些对应 4 种 BLOB 类型，有相同的最大长度和存储需求。
 
 ###### 4.2.2 非空约束
 
@@ -1320,7 +1349,7 @@ create table score(
 ALTER TABLE score1 ADD CONSTRAINT fk_stu_score FOREIGN KEY(sid) REFERENCES student(id);
 ```
 
-#### 第六章 多表查询
+#### 5 多表查询
 
 多表约束：外键约束。
 
@@ -1368,7 +1397,7 @@ ALTER TABLE score1 ADD CONSTRAINT fk_stu_score FOREIGN KEY(sid) REFERENCES stude
 
 ###### 5.2.1 合并结果集
 
-作用：合并结果集就是把两个select语句的查询结果合并到一起！
+作用：合并结果集就是把两个 select 语句的查询结果合并到一起！
 
 合并结果集有两种方式：
 
@@ -1392,11 +1421,13 @@ SELECT * FROM t1 UNION ALL SELECT * FROM t2。
 
 **注：被合并的两个结果：列数、列类型必须相同**
 
-###### 5.2.2 连接查询
+###### 5.2.2 连接查询(关联查询)
 
 连接查询就是求出多个表的乘积，例如 t1 连接 t2，那么查询出的结果就是 t1 * t2
 
-**注：下面的连接语句也是 *内连接*，但它不是 SQL 标准中的查询方式，可以理解为方言！**
+**注：下面的连接语句也是 内连接，但它不是 SQL 标准中的查询方式，可以理解为方言！**
+
+**注：一般来说关联查询效率优于嵌套查询。**
 
 ![032](https://upload-images.jianshu.io/upload_images/5097954-aaa89842bfc7f0cf.jpg)
 
@@ -1459,10 +1490,14 @@ SELECT emp.ename,emp.sal,emp.comm,dept.dname FROM emp,dept WHERE emp.deptno=dept
 
 **一：内连接**
 
-SQL标准的内连接为：
+SQL 标准的内连接为：
 
 ```sql
 SELECT * FROM emp e INNER JOIN dept d ON e.deptno=d.deptno;
+-- INNER 关键字可以省略
+SELECT * FROM emp e JOIN dept d ON e.deptno=d.deptno;
+-- ON 可以用 WHERE 关键字代替
+SELECT * FROM emp e JOIN dept d WHERE e.deptno=d.deptno;
 ```
 
 内连接的特点：查询结果必须满足条件。
@@ -1475,20 +1510,24 @@ SELECT * FROM emp e INNER JOIN dept d ON e.deptno=d.deptno;
 
 ```sql
 SELECT * FROM emp e LEFT OUTER JOIN dept d ON e.deptno=d.deptno;
+-- OUTER 关键字可以省略
+SELECT * FROM emp e LEFT JOIN dept d ON e.deptno=d.deptno;
 ```
 
 左连接是先查询出左表（即以左表为主），然后查询右表，右表中满足条件的显示出来，不满足条件的显示NULL。
 
-我们还是用上面的例子来说明。其中emp表中“张三”这条记录中，部门编号为50，而dept表中不存在部门编号为50的记录，所以“张三”这条记录，不能满足e.deptno=d.deptno这条件。但在左连接中，因为emp表是左表，所以左表中的记录都会查询出来，即“张三”这条记录也会查出，但相应的右表部分显示NULL。
+我们还是用上面的例子来说明。其中 emp 表中“张三”这条记录中，部门编号为 50，而 dept 表中不存在部门编号为 50 的记录，所以“张三”这条记录，不能满足 e.deptno=d.deptno 这条件。但在左连接中，因为 emp 表是左表，所以左表中的记录都会查询出来，即“张三”这条记录也会查出，但相应的右表部分显示 NULL。
 
 ![036](https://upload-images.jianshu.io/upload_images/5097954-eca26f475534cd24.jpg)
 
 **b.右外连接**
 
-右连接就是先把右表中所有记录都查询出来，然后左表满足条件的显示，不满足显示 NULL。例如在 dept 表中的40 部门并不存在员工，但在右连接中，如果dept表为右表，那么还是会查出 40 部门，但相应的员工信息为NULL。
+右连接就是先把右表中所有记录都查询出来，然后左表满足条件的显示，不满足显示 NULL。例如在 dept 表中的40 部门并不存在员工，但在右连接中，如果 dept 表为右表，那么还是会查出 40 部门，但相应的员工信息为NULL。
 
 ```sql
 SELECT * FROM emp e RIGHT OUTER JOIN dept d ON e.deptno=d.deptno;
+-- OUTER 关键字可以省略
+SELECT * FROM emp e RIGHT JOIN dept d ON e.deptno=d.deptno;
 ```
 
 ![037](https://upload-images.jianshu.io/upload_images/5097954-798be329cc615e23.jpg)
@@ -1507,15 +1546,19 @@ SELECT * FROM emp e RIGHT OUTER JOIN dept d ON e.deptno=d.deptno;
 SELECT * FROM emp e FULL JOIN dept d ON e.deptno=d.deptno;
 ```
 
-###### 5.2.3 子查询
+###### 5.2.3 子查询、嵌套查询
 
-一个 select 语句中包含另一个完整的 select 语句。
+**子查询**
 
-子查询就是嵌套查询，即 SELECT 中包含 SELECT，如果一条语句中存在两个，或两个以上 SELECT，那么就是子查询语句了，里面的查询叫做 **子查询**，外层的查询叫 **父查询**，一般情况都是先执行子查询，再执行父查询。
+- 子查询是指一个 SELECT 语句中包含另一个完整的 SELECT 语句。如果一条语句中存在两个或两个以上的 SELECT，那么里面的查询叫做 **子查询**，外层的查询叫 **父查询**，一般情况都是先执行子查询，再执行父查询。
+
+**嵌套查询**
+
+-  **嵌套查询属于子查询**，即将一个查询块嵌套在另一个查询块的 WHERE 子句或 HAVING 短语的条件中的查询。
 
 子查询出现的位置：
 
-- 放在 where 后面，作为被查询的条件的一部分；
+- 放在 where 后面，作为被查询的条件的一部分，此时也叫嵌套查询；
 - 放在 from 后面，作为表；
 
 当子查询出现在 where 后作为条件时，还可以使用如下关键字：
@@ -1536,7 +1579,7 @@ SELECT * FROM emp e FULL JOIN dept d ON e.deptno=d.deptno;
 
 分析：
 
-查询条件：工资 > JONES工资，其中 JONES 工资需要一条子查询。
+查询条件：工资 > JONES 工资，其中 JONES 工资需要一条子查询。
 
 第一步：查询 JONES 的工资
 
@@ -1665,7 +1708,19 @@ REVOKE ALL ON school.* FROM zhangsan@localhost; -- 取消授权
 DROP USER zhangsan@localhost; -- 删除用户
 ```
 
+##### 5.3 视图
+
+- 通过视图，将某个表或多个表的字段提取出来，形成一个虚表，视图建立在已有表的基础上, 视图赖以建立的这些表称为基表。
+- 向视图提供数据内容的语句为 SELECT 语句,可以将视图理解为存储起来的 SELECT 语句。
+- 视图没有存储真正的数据，真正的数据还是存储在基表中，程序员虽然操作的是视图，但最终视图还会转成操作基表，一个基表可以有 0 个或多个视图。
+
+- 如果不想让用户看到所有数据（字段，记录），只想让用户看到某些的数据时，此时可以使用视图;当需要减化 SQL 查询语句的编写时，**可以使用视图，但不提高查询效率**。
+
 ##### 练习
+
+#### 6 视图
+
+
 
 某网上商城数据库如下图所示
 
@@ -1745,7 +1800,7 @@ INSERT INTO USER(username,PASSWORD,address,phone) VALUES('赵六','123','北京�
 INSERT INTO USER(username,PASSWORD,address,phone) VALUES('田七','123','北京大兴','13812345687');
 ```
 
-#### 第七章 关于 JDBC 的简介
+#### 7 关于 JDBC 的简介
 
 ##### 7.1 简介
 
@@ -1790,7 +1845,7 @@ JDBC API使用驱动程序管理器和特定于数据库的驱动程序来提供
 
 ​    **SQLException：**此类处理数据库应用程序中发生的任何错误
 
-#### 第八章 JDBC 使用
+#### 8 JDBC 使用
 
 ##### 8.1 使用步骤
 
@@ -2300,7 +2355,7 @@ public class JdbcBinaryDemo {
 }
 ```
 
-#### 第九章 连接池
+#### 9 连接池
 
 ##### 9.1 自定义连接池
 
@@ -2743,7 +2798,9 @@ public class MyPool implements DataSource {
 	@Override
 	public boolean isWrapperFor(Class<?> iface) throws SQLException { return false; }
 	@Override
-	public Connection getConnection(String username, String password) throws SQLException { return null; }
+	public Connection getConnection(String username, String password) throws SQLException {
+    return null;
+  }
 }
 ```
 
@@ -2837,7 +2894,9 @@ public class Test2 {
 
 - C3P0 不需要手动设置，而 DBCP 需要手动设置配置文件。
 
-  注：因 C3P0 是在外部添加配置文件，工具直接进行应用，所以要求固定的命名和文件位置
+  注：1. 因 C3P0 是在外部添加配置文件，工具直接进行应用，所以要求固定的命名和文件位置
+
+  ​	2. C3P0 是单线程的，实际开发可能会选 Druid。
 
 - 导入相应 jar 包
 
@@ -2980,6 +3039,108 @@ public class DruidTest2 {
 			}
 		}
 	}
+}
+```
+
+##### 9.5 C3P0 与 Dbutils 一起使用
+
+导入相应 jar 包
+
+- mysql-connector-java-5.1.41-bin.jar（mysql 驱动包）
+- c3p0-0.9.1.2.jar
+- mchange-commons-java-0.2.11.jar
+- commons-dbutils-1.6.jar
+
+**c3p0-config.xml**
+
+```xml
+<?xml version="1.0" encoding="UTF-8"?>
+<c3p0-config>
+	<default-config>
+		<property name="driverClass">com.mysql.jdbc.Driver</property>
+		<property name="jdbcUrl">jdbc:mysql://localhost:3306/j1806</property>
+		<property name="user">root</property>
+		<property name="password">root</property>
+		<property name="initialPoolSize">3</property>
+		<property name="maxPoolSize">6</property>
+		<property name="maxIdleTime">2000</property>
+	</default-config>
+</c3p0-config>
+```
+
+**JDBCUtils**
+
+```java
+import org.apache.commons.dbutils.QueryRunner;
+import com.mchange.v2.c3p0.ComboPooledDataSource;
+public class JDBCUtils {
+	private static ComboPooledDataSource dataSource = null;
+	static{
+		dataSource = new ComboPooledDataSource();
+	}
+	// 获取 QueryRunner 对象
+	public static QueryRunner getQueryRunner(){
+		return new QueryRunner(dataSource);
+	}
+}
+```
+
+**DBTest**
+
+```java
+import java.sql.SQLException;
+import java.util.List;
+import org.apache.commons.dbutils.QueryRunner;
+import org.apache.commons.dbutils.handlers.BeanHandler;
+import org.apache.commons.dbutils.handlers.BeanListHandler;
+public class DBTest {
+	public static void main(String[] args) {
+		QueryRunner queryRunner = JDBCUtils.getQueryRunner();
+		try {
+			// 增删改使用 update 方法
+			String sql1 = "insert into t_employee(name, sex, age, phone) values(?, ?, ?, ?)";
+			// update 方式一
+			queryRunner.update(sql1, "zhangsan", "男", 20, "12345");
+			// update 方式二
+			Object[] params = new Object[]{"lisi", "女", 12, "232323"};
+			queryRunner.update(sql1, params);
+			// 查询使用 query 方法
+			// 使用 BeanListHandler 查询一组数据放入列表
+			String sql2 = "select * from t_employee";
+			String sql3 = "select * from t_employee where id=?";
+			List<Employee> list = queryRunner.query(sql2, new BeanListHandler<>(Employee.class));
+			for (Employee employee : list) {
+				System.out.println(employee.getName());
+			}
+			// 使用 BeanHandler 查询一个对象
+			Employee employee = queryRunner.query(sql3, new BeanHandler<>(Employee.class), 1);
+			System.out.println(employee.getName());
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+}
+```
+
+**Employee**
+
+```java
+public class Employee {
+	private Integer id;
+	private String name;
+	private String sex;
+	private Integer age;
+	private String phone;
+	public Integer getId() { return id; }
+	public void setId(Integer id) { this.id = id; }
+	public String getName() { return name; }
+	public void setName(String name) { this.name = name; }
+	public String getSex() { return sex; }
+	public void setSex(String sex) { this.sex = sex; }
+	public Integer getAge() { return age; }
+	public void setAge(Integer age) { this.age = age; }
+	public String getPhone() { return phone; }
+	public void setPhone(String phone) { this.phone = phone; }
 }
 ```
 

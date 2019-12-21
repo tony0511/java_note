@@ -13,16 +13,16 @@
 				text-align: center;
 			}
 			/*合并表格的边框*/
-			
+
 			table {
 				width: 700px;
 				border-collapse: collapse;
 			}
-			
+
 			h3 {
 				text-align: center;
 			}
-			
+
 			div {
 				margin: 0 auto;
 				width: 700px;
@@ -35,7 +35,6 @@
 			<h3>所有员工信息</h3>
 			<a href="添加.html">添加员工信息</a><br/>
 			<table border="1">
-
 				<tr>
 					<th>序号</th>
 					<th>姓名</th>
@@ -44,7 +43,7 @@
 					<th>手机</th>
 					<th>操作</th>
 				</tr>
-			<% 
+			<%
 				// 从内置的request对象中获取数据
 				List<Employee> list = (List<Employee>)request.getAttribute("empList");
 				for(Employee emp : list){
@@ -61,7 +60,6 @@
 					</td>
 				</tr>
 			<%} %>
-
 			</table>
 		</div>
 	</body>

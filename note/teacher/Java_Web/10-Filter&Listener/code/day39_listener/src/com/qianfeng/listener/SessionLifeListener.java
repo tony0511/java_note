@@ -3,35 +3,16 @@ package com.qianfeng.listener;
 import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
-/**
- * Application Lifecycle Listener implementation class SessionLifeListener
- *
- */
 public class SessionLifeListener implements HttpSessionListener {
-
-    /**
-     * Default constructor. 
-     */
-    public SessionLifeListener() {
-        // TODO Auto-generated constructor stub
-    }
-
-	/**
-     * @see HttpSessionListener#sessionCreated(HttpSessionEvent)
-     */
-    // session创建，调用该方法
-    public void sessionCreated(HttpSessionEvent arg0)  { 
-         // TODO Auto-generated method stub
-    	System.out.println("session create");
-    }
-
-	/**
-     * @see HttpSessionListener#sessionDestroyed(HttpSessionEvent)
-     */
-    // session销毁时，调用该方法
-    public void sessionDestroyed(HttpSessionEvent arg0)  { 
-         // TODO Auto-generated method stub
-    	System.out.println("session destroy");
-    }
-	
+  // 随着 tomcat 启动，创建 Listener 对象
+  public SessionLifeListener() {
+  }
+  // session 创建时触发
+  public void sessionCreated(HttpSessionEvent arg0)  {
+    System.out.println("session create");
+  }
+  // session 销毁时触发
+  public void sessionDestroyed(HttpSessionEvent arg0)  {
+    System.out.println("session destroy");
+  }
 }

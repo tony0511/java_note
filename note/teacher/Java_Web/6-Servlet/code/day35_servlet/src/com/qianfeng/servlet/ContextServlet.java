@@ -13,7 +13,7 @@ import javax.servlet.http.HttpServletResponse;
  */
 public class ContextServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -30,18 +30,25 @@ public class ContextServlet extends HttpServlet {
 
 		// 获取ServletContext对象
 		ServletContext servletContext = this.getServletContext();
-		
+
+		//    /W08_2_Servlet
+		System.out.println(servletContext.getContextPath());
+
+		//通过request对象，获取应用的路径
+		System.out.println(request.getContextPath());
+
+
 		// 获取应用的路径
 		String path = servletContext.getContextPath();
 		System.out.println(path);
-	
+
 		// 获取应用的初始化参数
 		String pwd = servletContext.getInitParameter("password");
 		System.out.println(pwd);
-	
+
 		// 向ServletContext域中存储数据
 		servletContext.setAttribute("name", "gugui");
-		
+
 	}
 
 	/**

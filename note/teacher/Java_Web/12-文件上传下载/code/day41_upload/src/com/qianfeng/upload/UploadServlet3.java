@@ -15,95 +15,65 @@ import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-/**
- * Servlet implementation class UploadServlet2
- */
 public class UploadServlet3 extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
-    /**
-     * @see HttpServlet#HttpServlet()
-     */
-    public UploadServlet3() {
-        super();
-        // TODO Auto-generated constructor stub
-    }
-
-	/**
-	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
-	 */
+  public UploadServlet3() {
+     super();
+  }
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
-
+		// 创建 FileItem 对象的工厂对象
 		DiskFileItemFactory factory = new DiskFileItemFactory();
-		
-		// 对上传的数据进行处理
+		// 穿创建文件上传处理对象
 		ServletFileUpload fileUpload = new ServletFileUpload(factory);
-		
-		// 判断表单enctype="multipart/form-data"
+		// 判断表单数据类型是否为 multipart/form-data 类型
 		if(ServletFileUpload.isMultipartContent(request)){
 			// 对提交的数据进行解析
 			try {
+				// 解析请求数据
 				List<FileItem> list = fileUpload.parseRequest(request);
 				for (FileItem fileItem : list) {
-					// 判断是否不同控件对应的数据
-					if(fileItem.isFormField()){
-						// 获取提交的数据
+					// 判断数据是否一般数据还是文件对象
+					if (fileItem.isFormField()) {
+						// 获取字段名
+						System.out.println(fileItem.getFieldName());
+						// 获取字段值
+						//System.out.println(fileItem.getString());
 						// 指定编码方式，解决中文乱码问题
 						System.out.println(fileItem.getString("utf-8"));
-						//System.out.println(fileItem.getString());
-						System.out.println(fileItem.getFieldName());
-					}else{
+					} else {
 						// 获取文件名
 						String name = fileItem.getName();
-						// 将文件上传到服务器的D:/upload文件夹下
-						//String path = "D:/upload";
-						
-						// 获取服务器上，web应用目录下的upload文件夹所在的绝对路径
-						//String path = this.getServletContext().getRealPath("/upload");
+						// 将文件上传到服务器的 D:/upload文件夹下
+						// String path = "D:/upload";
+						// 获取服务器上，web 应用目录下的 upload 文件夹所在的绝对路径
 						String path = this.getServletContext().getRealPath("/");
 						System.out.println(path);
-						
 						// 如果路径不存在，创建
 						File file = new File(path);
-						// 获取父路径，和upload文件夹组成一个新路径
-						// 文件上传到D:/..../webapps/upload目录下
+						// 获取父路径，和 upload 文件夹组成一个新路径，即文件上传到 D:/..../webapps/upload目录下
 						file =  new File(file.getParent() + "/upload");
 						if(!file.exists()){
 							file.mkdirs();
 						}
-						// 全球唯一id
+						// 获取全球唯一id（避免重名文件被替换）
 						String uuid = UUID.randomUUID().toString();
 						name = uuid + "_" + name;
 						// 根据路径和文件名创建对象
 						File newFile = new File(file.getAbsolutePath(), name);
-						
 						// 保存文件
 						fileItem.write(newFile);
 						// 删除缓存中数据
 						fileItem.delete();
 					}
 				}
-				
-				
 			} catch (FileUploadException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			} catch (Exception e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			
 		}
-	
 	}
-
-	/**
-	 * @see HttpServlet#doPost(HttpServletRequest request, HttpServletResponse response)
-	 */
 	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		// TODO Auto-generated method stub
 		doGet(request, response);
 	}
-
 }

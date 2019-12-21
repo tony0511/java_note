@@ -14,7 +14,7 @@ import javax.servlet.http.HttpSession;
 @WebServlet("/LogoutServlet")
 public class LogoutServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -29,15 +29,15 @@ public class LogoutServlet extends HttpServlet {
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
 
-		// 如果是false，如果根据sessionid可以找到session对象，直接返回，如果没有找到，返回null
+		// 如果是 false，如果根据 sessionid 可以找到 session 对象则直接返回，否则返回 null
 		HttpSession session = request.getSession(false);
 		if(session != null){
 			// 销毁session对象
 			session.invalidate();
 		}
-		
+
 		response.sendRedirect(request.getContextPath() + "/login.html");
-	
+
 	}
 
 	/**
