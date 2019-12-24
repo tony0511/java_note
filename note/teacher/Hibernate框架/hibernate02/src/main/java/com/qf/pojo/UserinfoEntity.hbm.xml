@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.qf.pojo.UserinfoEntity" table="userinfo" schema="qf">
+        <id name="uid">
+            <column name="uid" sql-type="bigint(20)"/>
+            <generator class="identity"></generator>
+        </id>
+        <property name="userName">
+            <column name="user_name" sql-type="varchar(200)" length="200" not-null="true"/>
+        </property>
+        <property name="userPass">
+            <column name="user_pass" sql-type="varchar(50)" length="50" not-null="true"/>
+        </property>
+    </class>
+</hibernate-mapping>

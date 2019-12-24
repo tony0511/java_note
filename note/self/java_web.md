@@ -1800,5 +1800,13 @@ public class DownloadServlet extends HttpServlet {
 }
 ```
 
+### 8. MVC
+
+- **Controller**：控制器，是控制请求的处理逻辑，对请求进行处理，负责请 求转发、页面的跳转 
+
+- **View**：视图，是用户看到并与之交互的界面，比如 HTML（静态资源），JSP（动态资源）等等。 
+
+- **Model**：模型，包含业务流程/状态的处理以及业务规则的规定，主要用来进行业务处理和数据的操作
+
 
 

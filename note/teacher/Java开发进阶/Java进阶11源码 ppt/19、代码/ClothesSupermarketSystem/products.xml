@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<list>
+  <clothes id="A0001">
+    <brand>VEROMODA</brand>
+    <style>连衣裙</style>
+    <color>白色</color>
+    <size>S</size>
+    <num>4</num>
+    <price>274.0</price>
+    <description>夏季五分袖连衣裙</description>
+  </clothes>
+  <clothes id="A0002">
+    <brand>GAP</brand>
+    <style>连衣裙</style>
+    <color>黑白色</color>
+    <size>S</size>
+    <num>19</num>
+    <price>164.0</price>
+    <description>系带无袖宽松夏季柔软碎花背心裙</description>
+  </clothes>
+  <clothes id="A0003">
+    <brand>ONLY</brand>
+    <style>连衣裙</style>
+    <color>蓝色</color>
+    <size>均码</size>
+    <num>8</num>
+    <price>599.0</price>
+    <description>荷叶边系带连衣裙</description>
+  </clothes>
+  <clothes id="A0004">
+    <brand>女人镜</brand>
+    <style>连衣裙</style>
+    <color>蓝色</color>
+    <size>S</size>
+    <num>20</num>
+    <price>48.0</price>
+    <description>工厂直销新款女装时尚气质修身夏季显瘦连衣裙</description>
+  </clothes>
+  <clothes id="A0005">
+    <brand>欧时力</brand>
+    <style>连衣裙</style>
+    <color>粉红色</color>
+    <size>S</size>
+    <num>15</num>
+    <price>99.0</price>
+    <description>新款女夏装拼接印花棉质短袖连衣裙</description>
+  </clothes>
+  <clothes id="A0006">
+    <brand>茵曼</brand>
+    <style>连衣裙</style>
+    <color>色</color>
+    <size>宝蓝色</size>
+    <num>7</num>
+    <price>199.0</price>
+    <description>夏季宽松大码棉麻裙</description>
+  </clothes>
+  <clothes id="A0007">
+    <brand>伊莲娜</brand>
+    <style>中短袖连衣裙</style>
+    <color>红色</color>
+    <size>均码</size>
+    <num>6</num>
+    <price>398.0</price>
+    <description>印花真丝夏季仙女裙</description>
+  </clothes>
+  <clothes id="A0008">
+    <brand>颜域</brand>
+    <style>连衣裙</style>
+    <color>浅蓝色</color>
+    <size>均码</size>
+    <num>40</num>
+    <price>399.0</price>
+    <description>夏季知性蕾丝女装</description>
+  </clothes>
+  <clothes id="A0009">
+    <brand>洛诗琳</brand>
+    <style>连衣裙</style>
+    <color>黑色</color>
+    <size>S</size>
+    <num>20</num>
+    <price>188.0</price>
+    <description>数码雪纺印花复古裙</description>
+  </clothes>
+  <clothes id="A0010">
+    <brand>法曼丽</brand>
+    <style>连衣裙</style>
+    <color>粉红色</color>
+    <size>M</size>
+    <num>10</num>
+    <price>288.0</price>
+    <description>淑女气质中长大摆裙</description>
+  </clothes>
+</list>
