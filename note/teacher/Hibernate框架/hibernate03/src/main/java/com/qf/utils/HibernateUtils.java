@@ -19,9 +19,9 @@ public class HibernateUtils {
 		return sessionFactory.openSession();
 	}
 
-	//获取session方式二，使用这个session必须开启事务
+	// 获取 session 方式二，使用这个 session 必须开启事务
 	public static Session getCuurentSession(){
-		//受线程绑定，也就是在多线程环境下，是线程安全的。
+		// 受线程绑定，也就是在多线程环境下，是线程安全的。
 		return sessionFactory.getCurrentSession();
 
 	}

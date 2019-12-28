@@ -3,15 +3,12 @@ package com.qf.pojo;
 import java.util.Collection;
 import java.util.HashSet;
 
-/**
- * Thanks for Everything.
- */
 public class BookType {
 	private Long typeId;
 	private String typeName;
 	private String typeDesc;
-	//一对多：集合没有初始化
-	private Collection<BookInfo> bookInfosByTypeId=new HashSet<BookInfo>();
+	// 一对多：集合没有初始化(需要自己手动初始化)
+	private Collection<BookInfo> bookInfosByTypeId = new HashSet<BookInfo>();
 
 	public Long getTypeId() {
 		return typeId;

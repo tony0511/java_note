@@ -17,8 +17,9 @@
             <column name="type_desc" sql-type="varchar(200)" length="200" not-null="true"/>
         </property>
         <!--  一对多的关系
-        inverse="false" 有自己维护关联关系
-        cascade="all" 支持所有的级联更新
+            inverse="false" 有自己维护关联关系
+            cascade="all" 支持所有的级联更新
+            lazy="false" 支持立即检索，默认为true延迟加载检索
         -->
         <set name="bookInfosByTypeId" lazy="false"  inverse="true" >
             <key>

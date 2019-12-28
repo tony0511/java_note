@@ -29,7 +29,7 @@
             <column name="book_desc" sql-type="varchar(200)" length="200" not-null="true"/>
         </property>
         <!-- 多对一的关系 -->
-        <many-to-one name="bookTypeByTypeId"  class="com.qf.pojo.BookType">
+        <many-to-one name="bookTypeByTypeId" class="com.qf.pojo.BookType">
             <column name="type_id" />
         </many-to-one>
 

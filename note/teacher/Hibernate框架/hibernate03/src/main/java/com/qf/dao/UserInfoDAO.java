@@ -7,13 +7,10 @@ import javax.persistence.EntityManagerFactory;
 import javax.persistence.EntityTransaction;
 import javax.persistence.Persistence;
 
-/**
- * Thanks for Everything.
- */
 public class UserInfoDAO {
 
 	public void createTable(){
-		//可以验证生成表是否正确
+		// 可以验证生成表是否正确
 		EntityManagerFactory factory = Persistence.createEntityManagerFactory("myjpa");
 		factory.close();
 	}
@@ -35,7 +32,7 @@ public class UserInfoDAO {
 
 	public static void main(String[] args) {
 		UserInfoDAO dao = new UserInfoDAO();
-//		dao.add();
+		// dao.add();
 		dao.createTable();
 	}
 }

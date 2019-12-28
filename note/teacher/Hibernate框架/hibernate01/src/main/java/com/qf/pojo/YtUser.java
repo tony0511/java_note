@@ -1,8 +1,5 @@
 package com.qf.pojo;
 
-/**
- * Thanks for Everything.
- */
 public class YtUser {
 	private long id;
 	private String username;

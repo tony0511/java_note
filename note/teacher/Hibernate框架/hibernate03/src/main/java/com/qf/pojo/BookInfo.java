@@ -11,7 +11,7 @@ public class BookInfo {
 	private Long bookDate;
 	private String bookPublish;
 	private String bookDesc;
-	//多对一
+	// 多对一
 	private BookType bookTypeByTypeId;
 
 	public Long getBookId() {
