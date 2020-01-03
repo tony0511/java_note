@@ -16,3 +16,4 @@ yarn-error.log*
 *.njsproj
 *.sln
 soft-plugins/
+**/struts-2.3.37/

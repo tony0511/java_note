@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:p="http://www.springframework.org/schema/p"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:util="http://www.springframework.org/schema/util"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/util
+       http://www.springframework.org/schema/util/spring-util.xsd">
+
+    <bean id="music1" class="com.qfedu.demo.soundsystem.Music">
+        <property name="title" value="告白气球" />
+        <property name="duration" value="215" />
+    </bean>
+
+    <bean id="music2" class="com.qfedu.demo.soundsystem.Music"
+          p:title="爱情废柴"
+          p:duration="305" />
+
+    <util:list id="trackList">
+        <ref bean="music1" />
+        <ref bean="music2" />
+    </util:list>
+    <bean id="compactDisc1" class="com.qfedu.demo.soundsystem.CompactDisc"
+          p:title="周杰伦的床边故事"
+          p:artist="周杰伦"
+          p:tracks-ref="trackList">
+    </bean>
+
+    <bean id="CDPlayer1" class="com.qfedu.demo.soundsystem.CDPlayer"
+          p:cd-ref="compactDisc1" />
+</beans>
