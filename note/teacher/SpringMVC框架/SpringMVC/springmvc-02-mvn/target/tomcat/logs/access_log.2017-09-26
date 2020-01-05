@@ -1,0 +1,11 @@
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:40:20 +0800] "GET /springmvc/user/form HTTP/1.1" 200 722 http-bio-8001-exec-1 679
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:40:59 +0800] "GET /springmvc/user/form HTTP/1.1" 200 752 http-bio-8001-exec-3 58
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:41:13 +0800] "GET /springmvc/user/save?username=helen&password=123&age=123&email=123&address.province=%E9%BB%91%E9%BE%99%E6%B1%9F&address.city=%E5%93%88%E5%B0%94%E6%BB%A8 HTTP/1.1" 200 275 http-bio-8001-exec-5 66
+10.0.116.91 - - [26/Sep/2017:11:41:46 +0800] "GET /springmvc/user/form HTTP/1.1" 200 752 http-bio-8001-exec-7 2
+10.0.116.91 - - [26/Sep/2017:11:41:46 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8001-exec-8 0
+10.0.116.91 - - [26/Sep/2017:11:41:47 +0800] "GET /favicon.ico HTTP/1.1" 404 - http-bio-8001-exec-9 0
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:42:18 +0800] "GET /springmvc/user/form HTTP/1.1" 200 766 http-bio-8001-exec-1 49
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:42:26 +0800] "POST /springmvc/user/save HTTP/1.1" 200 275 http-bio-8001-exec-2 23
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:42:45 +0800] "POST /springmvc/user/save HTTP/1.1" 200 275 http-bio-8001-exec-2 5
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:42:59 +0800] "GET /springmvc/user/form HTTP/1.1" 200 765 http-bio-8001-exec-5 43
+0:0:0:0:0:0:0:1 - - [26/Sep/2017:11:43:07 +0800] "GET /springmvc/user/save?username=%E5%A7%9A%E7%8E%AF&password=123&age=123&email=123&address.province=%E9%BB%91%E9%BE%99%E6%B1%9F&address.city=%E5%93%88%E5%B0%94%E6%BB%A8 HTTP/1.1" 200 275 http-bio-8001-exec-5 3
