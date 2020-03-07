@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ldf.mybatis.mapper.BlogMapper">
+    
+    <!-- 使用二级缓存 -->
+    <cache />
+	<!-- 定义输出对象 -->
+	<resultMap type="Blog" id="blogResultMap">
+		<!-- 指定要调用的构造方法 -->
+    	<constructor>
+    		<arg column="name" javaType="string" />
+    		<arg column="deptno" javaType="int" />
+    	</constructor>
+    	<id column="id" property="id" jdbcType="INTEGER" />
+       	<result column="deptno" property="deptNo" />
+       	<association
+       		column="emp_id"
+			property="emp"
+			javaType="Emp"
+			select="com.ldf.mybatis.mapper.EmpMapper.selectEmpById"></association>
+    	<collection
+    		column="id"
+    		property="articleList"
+    		javaType="ArrayList"
+    		ofType="Article"
+    		select="com.ldf.mybatis.mapper.ArticleMapper.selectArticleByBlogId"></collection>
+    </resultMap>
+    
+	<!-- 定义嵌套结果输出对象 -->
+	<resultMap type="Blog" id="blogResultMapNested">
+    	<id column="blog_id" property="id" jdbcType="INTEGER" />
+    	<result column="blog_name" property="name" />
+       	<result column="blog_deptno" property="deptNo" />
+       	<association
+       		column="blog_emp_id"
+			property="emp"
+			javaType="Emp">
+	    	<id column="emp_id" property="id" jdbcType="INTEGER" />
+	    	<result column="emp_name" property="name" />
+	       	<result column="emp_deptno" property="deptNo" />
+	       	<result column="emp_ext" property="ext" />
+		</association>
+    </resultMap>
+    
+    <!-- 定义sql片段 -->
+    <sql id="blogBase">
+		id,
+		name,
+		deptno as deptNo
+		emp_id as empId
+    </sql>
+	
+	
+	<select id="selectBlogListNested" resultMap="blogResultMapNested">
+		SELECT
+			a.id as blog_id,
+			a.name as blog_name,
+			a.deptno as blog_deptno,
+			a.emp_id as blog_emp_id,
+			b.id as emp_id,
+			b.name as emp_name,
+			b.deptno as emp_deptno,
+			b.ext as emp_ext
+		FROM
+			blog a
+		LEFT JOIN
+			emp b
+		ON
+			a.emp_id = b.id
+	</select>
+	<!-- statement，定义查询对象 -->
+	<!-- ***** CRUD ***** -->
+	<!-- <select id="selectBlog" parameterType="int" resultType="com.ldf.mybatis.pojo.Blog"> -->
+	<!-- 使用别名 -->
+	<select id="selectBlog" parameterType="integer" resultType="Blog">
+		SELECT
+			<!-- id,
+			name,
+			deptno as deptNo -->
+			<include refid="blogBase"></include>
+		FROM
+			blog
+		WHERE
+			id = #{id}
+	<!-- 使用输出对象 -->
+	<!-- <select id="selectBlog" parameterType="integer" resultMap="blogResultMap"> -->
+		<!-- select * from blog where id = #{id} -->
+	</select>
+	<select id="selectBlogList" parameterType="string" resultMap="blogResultMap">
+		<!-- select * from blog where name like #{name} -->
+		<!--
+			#是占位符？，$是字符串拼接。因此使用$的时候，如果参数是字符串类型，那么要使用引号
+			当时用$传参时，如果参数是单值类型（简单类型），并且只有一个参数，那么参数必须使用 value 占位，并且如果参数是字符串，要使用引号
+			尽量使用# 而不是 $
+			当参数表示表名或列名的时候，只能使用 $
+		-->
+		select * from blog where name like ${value}
+		<!-- select * from blog where name like '${value}' -->
+		<!-- select * from blog where name like '%${value}%' -->
+	</select>
+	<!-- 多参数传递 -->
+	<select id="selectBlogByPage" resultMap="blogResultMap">
+		<!-- 方式一：使用索引 -->
+		<!-- select * from blog limit #{0},#{1} -->
+		<!-- 方式二：使用注解，见 com.ldf.mybatis.mapper.BlogMapper.selectBlogByPage -->
+		<!-- select * from blog limit #{offset},#{pageSize} -->
+		<!-- 方式三：使用Map -->
+		select * from blog limit #{offset},#{pageSize}
+	</select>
+	
+	<!-- <insert id="insertBlog" parameterType="Blog"> -->
+	<!-- 把自增属性id返回到实体对象中 -->
+	<!-- <insert id="insertBlog" parameterType="Blog" useGeneratedKeys="true" keyProperty="id"> -->
+	<insert id="insertBlog" parameterType="Blog" keyProperty="id">
+		insert into blog (
+			id,
+			name,
+			deptno
+		)
+		values(
+			#{id},
+			#{name},
+			#{deptNo}
+		)
+	</insert>
+	
+	<insert id="insertBlogMysql" parameterType="Blog">
+		<selectKey resultType="java.lang.Integer" order="AFTER" keyProperty="id">
+            SELECT LAST_INSERT_ID()
+        </selectKey>
+		insert into blog (
+			id,
+			name,
+			deptno
+		)
+		values(
+			#{id},
+			#{name},
+			#{deptNo}
+		)
+	</insert>
+	
+	<insert id="insertBlogOracle" parameterType="Blog">
+		<selectKey resultType="java.lang.Integer" order="BEFORE" keyProperty="id">
+            select seq.nextval as id from dual
+        </selectKey>
+		insert into blog (
+			id,
+			name,
+			deptno
+		)
+		values(
+			#{id},
+			#{name},
+			#{deptNo}
+		)
+	</insert>
+	
+	<update id="upadteBlog" parameterType="Blog">
+		UPDATE
+			blog
+		SET
+			name=#{name},
+			deptno=#{deptNo}
+		WHERE
+			id=#{id}
+	</update>
+	<delete id="deleteBlogById" parameterType="integer">
+		DELETE FROM
+			blog
+		WHERE
+			id=#{id}
+	</delete>
+		
+	<!-- ***** 动态sql ***** -->
+	<select id="selectBlogListIf" parameterType="string" resultMap="blogResultMap">
+		select * from blog where deptno=3
+		<if test="value != null and value != ''">
+			and name like '%${value}%'
+		</if>
+	</select>
+	<select id="selectBlogListChoose" parameterType="Blog" resultMap="blogResultMap">
+		<!-- select * from blog where deptno=3
+		<choose>
+			<when test="id != null">
+				and id=#{id}
+			</when>
+			<when test="name != null and name != ''">
+				and name like #{name}
+			</when>
+			<otherwise>
+				and name like '%马%'
+			</otherwise>
+		</choose> -->
+		select * from blog
+		<!-- <where>
+			<if test="id != null">
+				id=#{id}
+			</if>
+			<if test="deptNo != null">
+				and deptno=#{deptNo}
+			</if>
+			<if test="name != null and name != ''">
+				and name like #{name}
+			</if>
+		</where> -->
+		<trim prefix="where" prefixOverrides="and|or">
+			<if test="id != null">
+				id=#{id}
+			</if>
+			<if test="deptNo != null">
+				and deptno=#{deptNo}
+			</if>
+			<if test="name != null and name != ''">
+				and name like #{name}
+			</if>
+		</trim>
+	</select>
+	
+	<update id="upadteBlogSet" parameterType="Blog">
+		UPDATE
+			blog
+		<!-- <set>
+			<if test="deptNo != null">deptno=#{deptNo},</if>
+			<if test="name != null">name=#{name}</if>
+		</set> -->
+		<trim prefix="set" suffixOverrides=",">
+			<if test="deptNo != null">deptno=#{deptNo},</if>
+			<if test="name != null">name=#{name}</if>
+		</trim>
+		WHERE
+			id=#{id}
+	</update>
+	<delete id="deleteBlogByIds" parameterType="list">
+		delete from blog where id in
+		<foreach collection="list" item="item" index="index" open="(" close=")" separator=",">
+			#{item}
+		</foreach>
+	</delete>
+	
+</mapper>

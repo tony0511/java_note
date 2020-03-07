@@ -23,7 +23,6 @@
 		<url-pattern>/</url-pattern>
 	</servlet-mapping>
 
-
 	<!-- 解决SpringMVC的post乱码 -->
 	<filter>
 		<filter-name>characterEncodingFilter</filter-name>

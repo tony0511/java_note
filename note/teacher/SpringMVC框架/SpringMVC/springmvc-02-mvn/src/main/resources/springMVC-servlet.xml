@@ -12,7 +12,7 @@
 
 	<!-- 扫描controller -->
 	<context:component-scan base-package="com.qfedu.springmvc.controller"></context:component-scan>
-	
+
 	<!-- 扫描dao -->
 	<context:component-scan base-package="com.qfedu.springmvc.dao"></context:component-scan>
 
@@ -29,11 +29,11 @@
 	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping"></bean> -->
 	<!-- 处理器适配器 -->
 	<!-- <bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter"></bean> -->
-	
+
 	<!-- 配置注解驱动 -->
 	<mvc:annotation-driven conversion-service="myConversion" />
 	<!-- <mvc:annotation-driven/> -->
-	
+
 	<!-- 类型转换器 -->
 	<bean id="myConversion" class="org.springframework.format.support.FormattingConversionServiceFactoryBean">
 		<property name="converters">
@@ -42,12 +42,12 @@
 				<bean class="com.qfedu.springmvc.converter.UserConverter"></bean>
 			</set>
 		</property>
-		
+
 	</bean>
-	
+
 	<!-- 处理静态资源 -->
 	<mvc:resources location="/lib/" mapping="/lib/**"></mvc:resources>
-	
+
 	<!-- 配置拦截器 -->
 	<mvc:interceptors>
 		<!-- 多个拦截器顺序执行 -->
@@ -60,16 +60,15 @@
 			<mvc:mapping path="/**" />
 			<mvc:exclude-mapping path="/lib/**"/>
 			<bean class="com.qfedu.springmvc.interceptor.MyInterceptor2"></bean>
-		</mvc:interceptor>
+		</mvc:interceptor
 	</mvc:interceptors>
-	
-	
+
 	<!-- 配置 MultipartResolver  处理文件上传 -->
-  	<bean id="multipartResolver" 
+  	<bean id="multipartResolver"
   	class="org.springframework.web.multipart.commons.CommonsMultipartResolver">
   		<property name="defaultEncoding" value="UTF-8"/> <!-- 默认编码 (ISO-8859-1) -->
-  		<property name="maxInMemorySize" value="10240"/> <!-- 最大内存大小 (10240)--> 
-  		<property name="uploadTempDir" value="/upload/"/> <!-- 上传后的目录名 (WebUtils#TEMP_DIR_CONTEXT_ATTRIBUTE) --> 
-  		<property name="maxUploadSize" value="-1"/> <!-- 最大文件大小，单位是字节，-1为无限制 --> 
+  		<property name="maxInMemorySize" value="10240"/> <!-- 最大内存大小 (10240)-->
+  		<property name="uploadTempDir" value="/upload/"/> <!-- 上传后的目录名 (WebUtils#TEMP_DIR_CONTEXT_ATTRIBUTE) -->
+  		<property name="maxUploadSize" value="-1"/> <!-- 最大文件大小，单位是字节，-1为无限制 -->
   	</bean>
-</beans>        
+</beans>

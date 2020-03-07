@@ -1,0 +1,571 @@
+2020-02-29 16:05:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:05:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:05:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:05:40 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:05:40 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:05:40 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:06:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:06:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:06:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:13:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:13:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:13:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:13:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:13:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:13:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:13:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:13:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:13:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:13:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:13:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:13:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:14:13 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:14:13 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-02-29 16:14:13 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:14:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:14:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-02-29 16:14:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:14:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:14:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:14:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:25:04 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:25:04 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-02-29 16:25:04 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:25:04 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:25:04 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:25:04 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:30:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:30:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:30:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:31:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-02-29 16:31:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:31:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 16:34:02 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select id,name,deptno as deptNo from emp where id = ? 
+2020-02-29 16:34:02 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-02-29 16:34:02 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 18:04:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like ? 
+2020-02-29 18:06:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like ? 
+2020-02-29 18:06:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %马%(String)
+2020-02-29 18:06:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 18:23:46 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like '%马%' 
+2020-02-29 18:23:46 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-02-29 18:23:46 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 18:24:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like '%马%' 
+2020-02-29 18:24:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-02-29 18:24:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 18:38:23 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like '%马%' 
+2020-02-29 18:38:23 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-02-29 18:38:23 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 22:13:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit 0,1 
+2020-02-29 22:13:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-02-29 22:13:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit 0,1 
+2020-02-29 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-02-29 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-02-29 22:19:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like '%马%' 
+2020-02-29 22:19:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-02-29 22:19:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 22:21:24 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? 
+2020-02-29 22:21:24 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-02-29 22:21:24 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 22:30:17 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? select * from emp limit ?,? 
+2020-02-29 22:30:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer), 2(Integer), 2(Integer)
+2020-02-29 22:30:59 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? 
+2020-02-29 22:30:59 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-02-29 22:30:59 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-02-29 23:10:07 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: insert into emp ( id, name, deptno ) values( ?, ?, ?, ) 
+2020-02-29 23:10:07 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 15(Integer), 啦啦(String), 234(Integer)
+2020-02-29 23:10:43 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: insert into emp ( id, name, deptno ) values( ?, ?, ? ) 
+2020-02-29 23:10:43 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 15(Integer), 啦啦(String), 234(Integer)
+2020-02-29 23:10:43 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-02-29 23:42:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: insert into emp ( id, name, deptno ) values( ?, ?, ? ) 
+2020-02-29 23:42:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: null, 啦啦乐乐(String), 222(Integer)
+2020-02-29 23:42:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 00:04:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 00:04:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 啦啦乐乐(String), 222(Integer), 10(Integer)
+2020-03-01 00:04:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 00:04:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 00:04:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 张三三(String), 1(Integer), 10(Integer)
+2020-03-01 00:04:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 00:07:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select id,name,deptno as deptNo from emp where id = ? 
+2020-03-01 00:07:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-01 00:07:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 00:07:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 00:07:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 张三三三(String), 1(Integer), 10(Integer)
+2020-03-01 00:07:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 00:15:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: DELETE FROM emp WHERE id=? 
+2020-03-01 00:15:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 16(Integer)
+2020-03-01 00:15:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 08:53:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and name like '%六%' 
+2020-03-01 08:53:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 08:53:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 08:53:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and name like '%马%' 
+2020-03-01 08:53:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 08:53:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select id,name,deptno as deptNo from emp where id = ? 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like '%马%' 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: insert into emp ( id, name, deptno ) values( ?, ?, ? ) 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: null, 啦啦乐乐(String), 222(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: DELETE FROM emp WHERE id=? 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 16(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 0
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select id,name,deptno as deptNo from emp where id = ? 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 张三三三(String), 1(Integer), 10(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select id,name,deptno as deptNo from emp where id = ? 
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-01 08:54:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 08:54:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 
+2020-03-01 08:54:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 08:54:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 08:55:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 
+2020-03-01 08:55:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 08:55:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 3
+2020-03-01 09:36:11 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and id=? 
+2020-03-01 09:36:11 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-01 09:36:11 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 09:36:54 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and name like ? 
+2020-03-01 09:36:54 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %马%(String)
+2020-03-01 09:36:54 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 09:37:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and name like '%马%' 
+2020-03-01 09:37:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 09:37:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 09:37:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and name like '%马%' 
+2020-03-01 09:37:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 09:37:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 09:37:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where deptno=3 and name like ? 
+2020-03-01 09:37:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 09:37:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 09:52:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp 
+2020-03-01 09:52:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 09:52:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 6
+2020-03-01 09:53:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp WHERE name like ? 
+2020-03-01 09:53:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 09:53:12 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 10:08:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select id,name,deptno as deptNo from emp where id = ? 
+2020-03-01 10:08:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-01 10:08:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 10:08:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 10:08:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 张三四(String), 1(Integer), 10(Integer)
+2020-03-01 10:08:58 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 10:10:35 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=? WHERE id=? 
+2020-03-01 10:10:35 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 张三三(String), 10(Integer)
+2020-03-01 10:10:35 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 10:23:51 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp set name=? WHERE id=? 
+2020-03-01 10:23:51 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 张三(String), 10(Integer)
+2020-03-01 10:23:51 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 10:24:07 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp 
+2020-03-01 10:24:07 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-01 10:24:07 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 6
+2020-03-01 10:24:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where and name like ? 
+2020-03-01 10:24:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 10:26:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where and name like ? 
+2020-03-01 10:26:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 10:29:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like ? 
+2020-03-01 10:29:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 10:29:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 10:29:46 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like ? 
+2020-03-01 10:29:46 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 10:29:46 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 10:30:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where and name like ? 
+2020-03-01 10:30:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 10:30:40 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where name like ? 
+2020-03-01 10:30:40 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: %六%(String)
+2020-03-01 10:30:40 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 10:53:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: delete from emp where in ( ? , ? ) 
+2020-03-01 10:53:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 18(Integer), 19(Integer)
+2020-03-01 10:54:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: delete from emp where in ( ? , ? ) 
+2020-03-01 10:54:38 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 18(Integer), 19(Integer)
+2020-03-01 10:55:15 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: delete from emp where id in ( ? , ? ) 
+2020-03-01 10:55:15 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 18(Integer), 19(Integer)
+2020-03-01 10:55:15 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 2
+2020-03-01 11:03:35 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 11:03:35 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-01 11:03:35 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 11:04:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 11:04:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 11:04:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:18:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:18:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:18:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:18:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:18:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:18:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:18:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:18:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 15(Integer)
+2020-03-01 15:18:39 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 王马五(String), 33(Integer), 12(Integer)
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:26:56 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 王马五(String), 34(Integer), 12(Integer)
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:28:26 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 王马五(String), 35(Integer), 12(Integer)
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:29:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:38:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:38:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:38:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:38:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:38:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:38:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:44:02 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 15:44:02 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:44:02 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:44:02 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:44:02 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.5
+2020-03-01 15:44:36 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 15:44:36 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:44:36 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:44:36 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:44:36 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.5
+2020-03-01 15:52:20 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: UPDATE emp SET name=?, deptno=? WHERE id=? 
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 王马五(String), 36(Integer), 12(Integer)
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==    Updates: 1
+2020-03-01 15:52:20 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT id, name, deptno as deptNo FROM emp WHERE id = ? 
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-01 15:52:20 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-01 16:58:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 16:58:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? 
+2020-03-01 16:58:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 16:58:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp2 where id = ? 
+2020-03-01 16:58:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 16:58:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 16:58:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 17:01:33 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 17:01:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? 
+2020-03-01 17:01:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 17:01:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp2 where id = ? 
+2020-03-01 17:01:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 17:01:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 17:01:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 17:03:45 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 17:03:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp limit ?,? 
+2020-03-01 17:03:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 17:03:45 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 17:03:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp2 where id = ? 
+2020-03-01 17:03:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 17:03:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 17:03:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 18:08:44 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:08:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:08:45 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:08:45 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where id = ? 
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:08:45 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-01 18:09:44 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:09:44 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:09:44 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:09:44 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:19:27 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:19:27 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:19:27 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:19:27 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 14(Integer)
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-01 18:19:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 18:20:08 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:20:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:20:08 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:20:09 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:20:09 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:20:09 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 14(Integer)
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-01 18:20:09 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 18:21:13 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:21:13 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:21:14 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:21:14 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 3
+2020-03-01 18:21:14 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 14(Integer)
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-01 18:21:14 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 18:21:59 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:22:00 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:22:00 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 3
+2020-03-01 18:22:00 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 14(Integer)
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-01 18:22:00 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-01 18:22:47 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-01 18:22:47 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-01 18:22:47 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 3
+2020-03-01 18:22:47 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 14(Integer)
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-01 18:22:47 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-02 00:00:00 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-02 00:00:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT a.id as blog_id, a.name as blog_name, a.deptno as blog_deptno, a.emp_id as blog_emp_id, b.id as emp_id, b.name as emp_name, b.deptno as emp_deptno, b.ext as emp_ext, FROM blog a LEFT JOIN emp b ON a.emp_id = b.id 
+2020-03-02 00:00:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-02 00:01:03 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-02 00:01:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT a.id as blog_id, a.name as blog_name, a.deptno as blog_deptno, a.emp_id as blog_emp_id, b.id as emp_id, b.name as emp_name, b.deptno as emp_deptno, b.ext as emp_ext FROM blog a LEFT JOIN emp b ON a.emp_id = b.id 
+2020-03-02 00:01:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-02 00:01:03 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 6
+2020-03-02 00:02:18 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-02 00:02:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT a.id as blog_id, a.name as blog_name, a.deptno as blog_deptno, a.emp_id as blog_emp_id, b.id as emp_id, b.name as emp_name, b.deptno as emp_deptno, b.ext as emp_ext FROM blog a LEFT JOIN emp b ON a.emp_id = b.id 
+2020-03-02 00:02:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-02 00:02:19 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 6
+2020-03-02 22:17:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog limit ?,? 
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 2(Integer), 2(Integer)
+2020-03-02 22:17:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-02 22:17:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 3
+2020-03-02 22:17:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 14(Integer)
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 0
+2020-03-02 22:17:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-02 23:18:33 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:18:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:18:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:18:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:18:33 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:18:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:18:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:18:33 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:22:30 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:22:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:22:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:22:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:22:30 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:22:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:22:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:22:30 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:28:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:28:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:28:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:28:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:28:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:28:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:28:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:28:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:28:42 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:28:42 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:28:42 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:28:43 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:29:21 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:29:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:29:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:29:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:29:22 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:29:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:29:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:29:22 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:32:55 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:32:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:32:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:32:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:32:55 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:32:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:32:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:32:55 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:34:27 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:34:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:34:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:34:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:34:27 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:34:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:34:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:34:27 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:38:25 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:38:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:38:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:38:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:38:25 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:38:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:38:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:38:25 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:38:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:38:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:38:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:38:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:38:57 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:38:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:38:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:38:57 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:40:16 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:40:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:40:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-02 23:40:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-02 23:40:16 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-02 23:40:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-02 23:40:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-02 23:40:16 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-07 11:50:36 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 11:50:37 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-07 11:50:37 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 10(Integer)
+2020-03-07 11:50:37 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-07 11:50:37 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 11:50:37 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-07 11:50:37 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-07 11:50:37 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-07 11:59:18 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-07 11:59:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: SELECT a.id as blog_id, a.name as blog_name, a.deptno as blog_deptno, a.emp_id as blog_emp_id, b.id as emp_id, b.name as emp_name, b.deptno as emp_deptno, b.ext as emp_ext FROM blog a LEFT JOIN emp b ON a.emp_id = b.id 
+2020-03-07 11:59:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-07 11:59:18 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 6
+2020-03-07 12:02:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog where name like '%马%' 
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-07 12:02:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-07 12:02:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 2
+2020-03-07 12:02:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-07 12:02:05 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 3
+2020-03-07 12:02:05 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-07 12:31:00 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog where name like '%马%' 
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-07 12:31:01 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from article where blog_id = ? 
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-07 12:31:01 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-07 12:31:01 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from article where blog_id = ? 
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 13(Integer)
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 3
+2020-03-07 12:31:01 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from emp where id = ? 
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 12(Integer)
+2020-03-07 12:31:01 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 1
+2020-03-07 12:31:28 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-07 12:31:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog where name like '%马%' 
+2020-03-07 12:31:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-07 12:31:28 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-07 12:32:10 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog where name like '%马%' 
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-07 12:32:10 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-07 12:32:10 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 2
+2020-03-07 12:32:10 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.EmpMapper]: 0.0
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from emp where id = ? 
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 12(Integer)
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 1
+2020-03-07 12:32:10 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.ArticleMapper]: 0.0
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====>  Preparing: select * from article where blog_id = ? 
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ====> Parameters: 13(Integer)
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <====      Total: 3
+2020-03-07 12:32:10 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2
+2020-03-07 12:32:31 org.apache.ibatis.cache.decorators.LoggingCache.getObject(LoggingCache.java:62) LoggingCache.java DEBUG Cache Hit Ratio [com.ldf.mybatis.mapper.BlogMapper]: 0.0
+2020-03-07 12:32:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==>  Preparing: select * from blog where name like '%马%' 
+2020-03-07 12:32:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG ==> Parameters: 
+2020-03-07 12:32:31 org.apache.ibatis.logging.jdbc.BaseJdbcLogger.debug(BaseJdbcLogger.java:139) BaseJdbcLogger.java DEBUG <==      Total: 2

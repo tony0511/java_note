@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ldf.mybatis.mapper.EmpMapper">
+    
+    <!-- 使用二级缓存 -->
+    <cache />
+    
+    <resultMap type="Emp" id="empResultMap">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <result column="deptno" property="deptNo"/>
+    </resultMap>
+    
+    <resultMap type="Emp" id="empResultMapVehicle">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+        <!-- 鉴别器 -->
+        <discriminator column="vehicle_type" javaType="int">
+        	<case value="1" resultType="Suv">
+        		<result column="all_wheel_drive" property="allWheelDrive"></result>
+        	</case>
+        	<case value="2" resultType="Car">
+        		<result column="door_count" property="doorCount"></result>
+        	</case>
+        </discriminator>
+    </resultMap>
+    
+    <select id="selectEmpById" parameterType="int" resultMap="empResultMap">
+        select * from emp where id = #{id}
+    </select>
+    <select id="selectEmpByIdVehicle" parameterType="int" resultMap="empResultMapVehicle">
+        select * from emp where id = #{id}
+    </select>
+</mapper>

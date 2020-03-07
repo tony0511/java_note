@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ldf.mybatis.mapper.ArticleMapper">
+    
+    <!-- 使用二级缓存 -->
+    <cache />
+    
+    <resultMap type="Article" id="articleResultMap">
+        <id column="id" property="id" jdbcType="INTEGER"></id>
+    </resultMap>
+    
+    <select id="selectArticleById" parameterType="int" resultMap="articleResultMap">
+        select * from article where id = #{id}
+    </select>
+    
+    <select id="selectArticleByBlogId" parameterType="int" resultMap="articleResultMap">
+        select * from article where blog_id = #{blogId}
+    </select>
+</mapper>

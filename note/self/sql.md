@@ -1042,7 +1042,47 @@ alter user 'root'@'localhost' identified with mysql_native_password by '123456';
 -- 再次查看加密方式可以看到加密方式更新了，然后再使用 Navicat 连接即可
 ```
 
-3. Navicat 快捷键
+3. mac mysql 忘记密码问题
+   
+   > mac中出现 2003 - Can't connect to MySQL server on '127.0.0.1' (61 "Connection refused") 如何解决？
+   
+   ```
+   第一步　　关闭mysql服务:
+   苹果->系统偏好设置->最下边点mysql 在弹出页面中 关闭mysql服务（点击stop mysql server）
+   如果这种方法没有成功，可以使用命令行关闭mysql:
+   ~$ sudo /usr/local/mysql/support-files/mysql.server stop
+   
+   第二步　　
+   1、进入终端输入：cd /usr/local/mysql/bin
+   2、车后 登录管理员权限 sudo su  （输入你电脑的密码）
+   3、回车后输入以下命令来禁止mysql验证功能  ./mysqld_safe --skip-grant-tables（注意是mysqld）
+   4、回车后mysql会自动重启（偏好设置中mysql的状态会变成running）
+   
+   第三步
+   1、输入命令 ./mysql
+   2、回车后，输入命令 FLUSH PRIVILEGES;
+   3、回车后，输入命令 ALTER user 'root'@'localhost' IDENTIFIED BY 'lalalala' （lalalala, 这是新密码随意写一个记住的）
+   
+   第四步
+   重启mysql:
+   ~$ sudo /usr/local/mysql/support-files/mysql.server restart
+   这就ok了,可以去连接试试
+   ```
+   
+4. 查看 mysql 端口
+
+   方式一：
+
+   ​	mac：`grep mysql /etc/services`
+
+   方式二：
+
+   1. 进入 mysql：`mysql -u root -p`
+
+   2. 查看端口：`show global variables like 'port';`
+
+5. Navicat 快捷键
+
    - **Ctrl + N**：打开一个新的查询窗口
    - **Ctrl + W**：关闭一个查询窗口
    - **Ctrl + Shift + R**：只运行选中的 sql 语句
